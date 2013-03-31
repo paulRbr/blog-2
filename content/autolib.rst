@@ -41,7 +41,7 @@ aussi déployer des stations dans des parking couverts. Pour être honnête, il 
 mes chiffres disons par 4.
 
 Pour avoir une autre vision du gaspillage d'espace publique par les voitures, voici un
-`parking de Toulouse <http://g.co/maps/p22b9>` qui a une capacité de 510 places.
+`parking de Toulouse <http://g.co/maps/p22b9>`_ qui a une capacité de 510 places.
 
 Et sinon, il semblerait que l'Autolib' `marche mieux que prévu <http://tempsreel.nouvelobs.com/economie/20120928.REU6981/autolib-devrait-etre-rentable-au-printemps-2014.html>`_.
 Je ne peux que m'en réjouir et espérer une accélération de la libération de l'espace public :)
