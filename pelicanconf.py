@@ -10,8 +10,9 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 
 # Blogroll
-LINKS =  (('Pelican (moteur de blog)', 'http://docs.notmyidea.org/alexis/pelican/'),
-          ('Canal TP (mon employeur)', 'http://www.canaltp.fr'),)
+LINKS =  (('Pelican (moteur de ce blog)', 'http://docs.notmyidea.org/alexis/pelican/'),
+          ('Canal TP (mon employeur)', 'http://www.canaltp.fr'),
+          (u"Blog de mon boulot où j\'écris parfois", 'http://labs.canaltp.fr'),)
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/Tristramg'),

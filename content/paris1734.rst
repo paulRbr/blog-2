@@ -14,6 +14,7 @@ Voici le résultat : http://vrac.tristramg.eu/Turgot2/openlayers.html
 Lisez la suite si vous savoir comment faire.
 
 Nous allons utiliser le Plan Turgot de 1734. C’est à peu près la première carte de Paris qui soit suffisemment fiable.
+Plus d'information sur ... Wikipedia *of course* : http://fr.wikipedia.org/wiki/Plan_de_Turgot
 
 Je me suis pas mal basé sur ce billet : http://shawnsbits.com/blog/2010/12/23/mapkit-overlays-session-1-overlay-map/
 
@@ -46,5 +47,6 @@ Toutes (enfin, toutes celles que je connais) les bibliothèques de cartographie 
 
 Mettre tout ça sur une carte
 ****************************
-gdal2tiles.py génère des fichiers tout fait. Donc c’est une version de feignasse, mais qui marche plutot bien. En particulier la version Google Maps est sympatique parcequ’on peut avoir la voirie par dessus (même si ça me fait chier de l’admettre ;) ).
+gdal2tiles.py génère des fichiers tout fait. Donc c’est une version de feignasse, mais qui marche plutot bien. 
+J'ai un peu traficoté le code html généré pour OpenLayers mais rien de sorcier.
 

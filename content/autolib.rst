@@ -17,7 +17,7 @@ et le fait que ce soit des voitures électriques (mais on s’en fout royalement
 
 Par contre ce qui est intéressant, c’est surtout qu’ils espèrent remplacer 22 500 voitures
 (ce n’est pas la première fois que j’entends ce ratio de 1 pour 7 —
-à `Nantes <http://www.imarguerite.com/les-plus/environnement.html>`
+à `Nantes <http://www.imarguerite.com/les-plus/environnement.html>_`
 ils parlent même d’un ration de 8 à 10 contre 1).
 
 En gardant 5500 places pour la rotation des 3000 autolib’ et 2000 places pour faciliter le parking des automobilistes, on libère donc 15 000 places de parking.
@@ -43,5 +43,5 @@ mes chiffres disons par 4.
 Pour avoir une autre vision du gaspillage d'espace publique par les voitures, voici un
 `parking de Toulouse <http://g.co/maps/p22b9>` qui a une capacité de 510 places.
 
-Et sinon, il semblerait que l'Autolib' `marche mieux que prévu <http://tempsreel.nouvelobs.com/economie/20120928.REU6981/autolib-devrait-etre-rentable-au-printemps-2014.html>`.
+Et sinon, il semblerait que l'Autolib' `marche mieux que prévu <http://tempsreel.nouvelobs.com/economie/20120928.REU6981/autolib-devrait-etre-rentable-au-printemps-2014.html>`_.
 Je ne peux que m'en réjouir et espérer une accélération de la libération de l'espace public :)
