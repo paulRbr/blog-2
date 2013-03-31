@@ -50,8 +50,8 @@ Cet article explique plutôt bien ce dont il s’agit http://applidium.com/en/ne
 Les tasks Rust
 --------------
 
-Les *task* dans Rust sont comparables que les *goroutines* de Go. La création d’une tâche est très légère : c’est tout à fait envisageable de lancer des dizaines de milliers te tâches.
-Concrètement, à l’exécution du programme plusieurs threads sont lancés qui se répartissent le traitement des task.
+Les *tasks* dans Rust sont comparables que les *goroutines* de Go. La création d’une tâche est très légère : c’est tout à fait envisageable de lancer des dizaines de milliers de tâches.
+Concrètement, à l’exécution du programme plusieurs threads sont lancés qui se répartissent le traitement des tasks.
 
 En ce qui concerne la communication entre taches, un objet spécifique permet de s’échanger des données. Il s’agit de l’unique moyen de communiquer entre tâches : il n’y a donc aucun moyen
 d’avoir deux taches qui accèdent simultanément à la même donnée. Il n’y a donc plus toutes les emmerdes liées à la programmation multithreadée.
@@ -86,7 +86,7 @@ deux *tasks* accèdent simultanément à la même donnée. Il n'y a donc aucun r
 Données locales
 ---------------
 
-Pour des raisons qui m’échappent, peut de langages proposent de déclarer des objets qui ont une durée de vie limitée au scope. C’est extrêmement performant (pas de garbage
+Pour des raisons qui m’échappent, peu de langages proposent de déclarer des objets qui ont une durée de vie limitée au scope. C’est extrêmement performant (pas de garbage
 collector, pas de surcout mémoire lié au pointeur…). On a la garantie que l’objet existe et il sera simplement détruit à la fin du contexte.
 Si on veut sortir une variable du contexte, on la copie.
 
