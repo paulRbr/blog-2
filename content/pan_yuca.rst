@@ -13,7 +13,7 @@ On peut les manger pour le petit-dèj, le gouter ou bien pour l’apéro, nature
 Pendant 20 ans (littérallement !) ma mère a essayé d’imiter la recette avec des succès mitigés. Est-ce qu’on nous cachait
 la recette originale ? Est-ce les ingrédients qui n’étaient pas assez bon ?
 
-Puis, je tombe un jour par hasard sur un blog de recettes de cuisine : http://laylita.com tenue par une exilée équatorienne qui porte
+Puis, je tombe un jour par hasard sur un blog de recettes de cuisine : http://laylita.com tenu par une exilée équatorienne qui porte
 le même nom que ma mère et qui propose une recette qui fonctionne ! La voici : http://laylita.com/recipes/2008/01/14/pan-de-yuca-pan-queso/
 
 Vu le succès qu’ont ces pains, je dévoile le secret.
@@ -39,7 +39,7 @@ Préparation
 -----------
 
 * Rapper la mozzarella. C’est l’étape la plus fastidieuse
-* Mélanger tout sauf le beurre et l’œufs
+* Mélanger tout sauf le beurre et l’œuf
 * Rajouter le beurre et l’œuf
 * Pétrir
 * Ajuster la consistance avec un peu d’eau ou un peu de farine
