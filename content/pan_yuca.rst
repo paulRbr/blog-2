@@ -10,7 +10,7 @@ Quand j’allais en Équateur mon grand-père préparait pour le petit déjeuner
 On peut les manger pour le petit-dèj, le gouter ou bien pour l’apéro, nature ou accompagné de yaourt ou encore de piment
 à base de *tomate de arbol* (tamarillo en français, pratiquement introuvable en France).
 
-Pendant 20 ans (littérallement !) ma mère a essayé d’imiter la recette avec des succès mitigés. Est-ce qu’on nous cachait
+Pendant 20 ans (littéralement !) ma mère a essayé d’imiter la recette avec des succès mitigés. Est-ce qu’on nous cachait
 la recette originale ? Est-ce les ingrédients qui n’étaient pas assez bon ?
 
 Puis, je tombe un jour par hasard sur un blog de recettes de cuisine : http://laylita.com tenu par une exilée équatorienne qui porte
@@ -38,7 +38,7 @@ Les quantités sont assez approximatives, c’est pas de la pâtisserie à la fr
 Préparation
 -----------
 
-* Rapper la mozzarella. C’est l’étape la plus fastidieuse
+* Râper la mozzarella. C’est l’étape la plus fastidieuse
 * Mélanger tout sauf le beurre et l’œuf
 * Rajouter le beurre et l’œuf
 * Pétrir
@@ -57,4 +57,4 @@ Cuisson
 OMN NOM NOM
 -----------
 
-Attention, ça part très vite ! Ça tombe bien, ça se conserve pas très bien.
+Attention, ça part très vite ! Ça tombe bien, ça ne se conserve pas très bien.
