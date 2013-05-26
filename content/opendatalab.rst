@@ -35,12 +35,18 @@ Ma réalisation
 
 Entre deux échanges, j’ai fait mon mini-projet utilisant les données de la RATP en mettant une contrainte : ne pas coder,
 seulement utiliser un tableur (à la grande perplexité de Andrew ;) ). Je pense en effet qu’il est important que l’opendata
-ne se focalise pas qu’auprès des développeurs.
+s’ouvre un peu plus à ceux qui ne veulent pas forcément créer une killer-app.
 
 J’ai donc voulu essayer de reproduire ceci : http://www.fastcodesign.com/1669080/what-if-londons-geography-were-as-distorted-as-its-tube-map
 
 Le plan schématique du métro de la RATP est déformé. Ça lui permet d’être lisible mais les distances ne collent pas. L’idée est donc
-de déformer une 
+de déformer une carte réaliste de Paris pour qu’elle colle au plan de la RATP.
+
+C’est bien évidemment parfaitement inutile. C’est avec une très grande minutie que je ne répondais à aucun critère de la grille d’évaluation
+
+* apporter un plus aux voyageurs
+* mashup de plusieurs source de donnése
+* être viable
 
 Choix des données
 -----------------
@@ -91,3 +97,16 @@ Voici le résultat (clic-droit afficher l’image pour l’avoir un plus grand)
 .. image:: images/paris_by_ratp.png
     :width: 750px
 
+Conclusion
+**********
+
+Merci encore à la RATP pour les données et les échanges.
+
+J’ai plus ou moins réussi mon challenge de faire une dataviz basée sur de l’OpenData sans coder.
+
+J’espère juste l’ouverture de ces données ira un peu plus loin d’un évènement ponctuel. La valeur
+de ces données mérite beaucoup plus qu’une simple application. Il faut impliquer la recherche à
+plus long terme, il faudrait réussir à enfin créer un éco-systèmes d’entreprises qui s’entraideraient
+et créons des projets artistiques : la RATP c’est le quotidien de millions de personnes, elle nous amène
+à notre rendez-vous galant, elles nous met hors de nous quand ça se grippe, elle transforme notre vision
+de la ville, tant de choses à exprimer autrement qu’en HTML5.
