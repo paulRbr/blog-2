@@ -9,6 +9,9 @@ Petit historique du calcul d’itinéraire
 Introduction
 ************
 
+Plus formellement pour parler de calcul d’itinéraire, on parlerait du « problème du plus court chemin dans un graphe ».
+La finalité reste la même : qu’est-ce qu’il y a de plus court pour aller de A vers B. 
+
 Les calculs d’itinéraires ont ceci de sympa que l’application finale parle à n’importe qui :
 
 * l’utilisateur final qui utilise un GPS
@@ -40,7 +43,8 @@ Il faut attendre 28 ans pour y arriver.
 1987 : Tarjan
 *************
 
-Le point faible de l’algorithme de Dijkstra est sa queue de priorité. La publication par Tarjan (une autre référence dans le monde des Graphes)
+Le point faible de l’algorithme de Dijkstra est sa queue de priorité qui remonte le prochain nœud du réseau à visiter.
+La publication par Tarjan (une autre référence dans le monde des Graphes)
 d’un `article en 1987 <http://www.cs.princeton.edu/courses/archive/fall03/cs528/handouts/fibonacci%20heaps.pdf>`_ nous amène à la version « moderne » de
 l’algorithme de Dijkstra.
 
@@ -80,7 +84,7 @@ Il a été présenté dans un thèse de master (du coup j’ai un peu honte de m
 
 Il n’y a pas vraiment de nouveautés, juste une suppression de tout le superflu rendant d’autres algorithmes trop compliqués pour ne garder que le cœur qui fonctionne bien.
 
-J’invite ceux qui s’intéressent à l’algorithmie de lire l’algorithme et surtout sa démonstration très agréable.
+J’invite ceux qui s’intéressent à l’algorithmie à lire l’algorithme et surtout sa démonstration très agréable.
 À la première lecture on se dit que ça ne peut pas marcher et il faut vraiment dérouler la démonstration pour s’en convaincre.
 
 C’est cet algorithme qui est utilisé dans `OSRM <http://map.project-osrm.org/>`_, un calculateur Libre qui se base sur les données `OpenStreetMap <http://www.openstreetmap.org>`_.
@@ -91,10 +95,10 @@ C’est cet algorithme qui est utilisé dans `OSRM <http://map.project-osrm.org/
 
 On sait donc enfin calculer efficacement un itinéraire sur un réseau routier. Mais qu’en est-il en transports en communs ? C’est vraiment pas la joie.
 
-Les performances sont décevantes, et les tentatives d’appliquer les succès sur les réseau routier ont échoué.
+Les performances sont décevantes, et les tentatives d’appliquer les succès sur les réseaux routiers ont échoué.
 
 Dans l’article `Car or Public Transport—Two Worlds <http://link.springer.com/chapter/10.1007/978-3-642-03456-5_24>`_ H. Bast souligne les différences
-qu’il existe entre les deux mondes et qu’il n’est pas pertinent d’essayer de se rapprocher.
+qui existent entre les deux mondes et qu’il n’est pas pertinent d’essayer de se rapprocher.
 
 2010 : transfer patterns, enfin la performance
 **********************************************
@@ -127,7 +131,7 @@ C’est le mouvement open data appliqué aux transports qui a permis ces progrè
 Le dernier pour la route ! Dans un article très modestement nommé `Intriguingly Simple and Fast Transit Routing <http://link.springer.com/chapter/10.1007%2F978-3-642-38527-8_6>`_
 les auteurs présentent le *connection scan algorithm*. Il est légèrement plus performant que Raptor, mais il est considérablement plus simple.
 
-À la lecture de l’article, puis à nouveau à l’implémentation, on est étonné à quel point c’est encore plus bête qu’un pigeon, mais ça marche.
+À la lecture de l’article, puis à nouveau à l’implémentation, on est étonné de voir à quel point c’est encore plus bête qu’un pigeon, mais ça marche.
 
 On fait un voyage de 54 ans dans les calculs d’itinéraires pour arriver sur un algorithme qui aurait pu être développé en même temps que celui de Dijkstra.
 
