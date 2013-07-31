@@ -13,7 +13,7 @@ Suite aux accidents ferroviaires, des personnes se sont inquiétées : le train 
 
 Réponse courte : non.
 
-Avoir trois accidents d’affilés, reste
+Avoir trois accidents aussi grave en si peu de temps, reste
 `statistiquement dans les normes <http://www.20minutes.fr/societe/1194147-20130730-accidents-train-la-loi-series-existe-pas>`_.
 
 Pour remettre une couche,
@@ -22,7 +22,7 @@ donne des chiffres sur le nombre de décès par milliards de kilomètre. Le trai
 
 Je me suis donc demandé ce qu’il en est pour le vélo, et je me suis mis à faire des petits produits en croix sur un coin de papier.
 
-C’est pourtant un exercice dangereux : les foudres s’abattent aussitôt sur toute personne osant parler globalement avec des
+Il s’agit pourtant un exercice dangereux : les foudres s’abattent aussitôt sur toute personne osant parler globalement avec des
 chiffres vérifiables. Il y a toujours une histoire personnelle (parfois malheureusement, souvent un sauvetage de la mort *in extremis*).
 Olivier Razemon explique bien mieux ce phénomène sur
 `son blog <http://transports.blog.lemonde.fr/2012/10/19/moi-je-par-exemple-ma-mere-ne-fait-pas-de-velo>`_.
@@ -32,39 +32,39 @@ Tentons quand même.
 Le cas de Paris
 ***************
 
-C’est dur d’avoir des chiffres. Je me concentre donc uniquement sur Paris et sont excellent
+Je n’ai pas trouvé de chiffres à l’échelle nationale assez précis. Je me concentre donc uniquement sur Paris et son excellent
 `Bilan des Déplacements <http://www.paris.fr/pratique/deplacements-voirie/dossier/bilan-des-deplacements-a-paris/le-bilan-des-deplacements-a-paris-en-2011/rub_7096_dossier_103374_port_16333_sheet_20491>`_.
 
 On y apprend qu’en 2011 :
 
-* Il y a eu 31,4 Millions de location Vélib
+* Il y a eu 31,4 millions de locations Vélib
 * Durée moyenne 25 minutes (on comptera 20 minutes pour prendre en compte les galères pour trouver une place)
-* Il y avait deux fois plus de déplacements en vélo personne qu’en Vélib
+* Il y avait deux fois plus de déplacements en vélo personnel qu’en Vélib
 
-Prennons une vitesse moyenne de 15km/h, soit 5km par trajet.
-Un total de 90 Millions de trajets à vélo.
+Prenons une vitesse moyenne de 15km/h, soit 5km par trajet pour un total de 90 millions de trajets à vélo.
 
-On en arrive à 450 Millions de km de vélo effectués par an à Paris.
+On arrive à 450 millions de km de vélo effectués par an à Paris.
 
 Il ne nous manque plus que le nombre de cyclistes tués chaque année à Paris.
 
 `Faites vos paris <http://transports.blog.lemonde.fr/2012/10/12/un-cycliste-tue-a-paris-un-seul-pas-20-ni-100-ni-500/>`_ 1000 ? 100 ? 10 ?
 
-Entre 0 et 6. Prenons 4.5 comme moyenne pour que ça tombre rond.
+Entre 0 et 6. Prenons 4.5 comme moyenne pour que ça tombe rond.
 
-On en arrive donc à 10 morts par milliard de kilomètre.
+On en arrive donc à **10 morts par milliard de kilomètre**.
 
-C’est nettement moins bien que le train ou l’avion. Deux fois plus mortel que la voiture, mais très largement plus sur que la moto.
+On risque donc plus de mourir en faisant un kilomètre à vélo qu’en train ou avion. Faire un kilomètre à vélo est aussi dangereux que de faire deux kilomètres en voiture.
+Cela reste cependant très largement plus sûr que la moto.
 
+Évidemment, on a pas pris en compte le fait que le vélo `prolonge la durée de vie <http://www.mrmoneymustache.com/2013/06/13/bicycling-the-safest-form-of-transportation/>`_.
 
 Disclaimer
 **********
 
-Ces petits calculs ont un biais considérable : faire du vélo à Paris est extrèmement sur. En fait, à l’échelle nationale,
-
+Ces petits calculs ont un biais considérable : faire du vélo à Paris est extrêmement sûr. En fait, à l’échelle nationale,
 `59% des décès on lieu en dehors des agglomération <http://www.preventionroutiere.asso.fr/Nos-publications/Statistiques-d-accidents/Accidents-cyclistes>`_.
 
-C’est effet pas tant la voiture qui est dangereuse, mais la voiture qui roule à plus de 30km/h.
+Ce n’est en effet pas tant la voiture qui est dangereuse, mais la voiture qui roule à plus de 30km/h.
 
 
 Améliorer la situation
@@ -76,7 +76,7 @@ Créer une fédération des cyclistes en colère pour que les voitures pensent �
 les différents modes dos à dos, on a déjà connu plus constructif comme démarche. Comment alors ?
 
 Par des statistique pardi ! En se renseignant sur les causes de décès. Il s’agit dans la majorité de cas d’accidents avec des gros véhicules (bus, camion poubelle).
-Le seul vrai meutrier est l’angle mort. Ne dépassez jamais par la droite : règle toute simple qui – contrairement au port du casque – rendra tout le suite
+Le seul vrai meutrier est l’angle mort. Ne dépassez jamais par la droite : règle toute simple qui — contrairement au port du casque — rendra tout le suite
 le vélo moins dangereux par kilomètre parcouru que la voiture.
 
 Série de faits divers macabres pour étayer mon propos :
