@@ -12,7 +12,7 @@ Introduction
 I wrote a blog post in French that had some unexpected success (by success I mean that people actually read it). At least two people asked
 for an English translation. So here it goes, with some of the errors in the French version corrected.
 
-Formally we would the speak of “shortest path in a graph problem”. The goal is the same: what is the shortest way to go from A to B.
+Formally we would speak of “shortest path in a graph problem”. The goal is the same: what is the shortest way to go from A to B.
 
 Route computation are nice as the actual use cases can be explained to anyone:
 
@@ -34,7 +34,7 @@ It is nowadays usually called the *Bellman-Ford* algorithm.
 
 `Edgard Dijkstra <https://en.wikipedia.org/wiki/Edsger_W._Dijkstra>`_ is Dutch.
 
-He is one big names in computer science. He is know for his handwriting and quotes such as:
+He is one of the big names in computer science. He is know for his handwriting and quotes such as:
 
 * ``Simplicity is prerequisite for reliability``
 * ``The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim``
@@ -44,10 +44,10 @@ He is the author of — brace yourself — *Dijkstra’s algorithm* published in
 It has been described in a `two pages only article <http://www-m3.ma.tum.de/foswiki/pub/MN0506/WebHome/dijkstra.pdf>`_ but the name stuck
 as the fundamental brick of route computations.
 
-However, the algorithm we learn at school is not the one published by Dijkstra. It has a complexity of O(n²) while we learn that complexity
+However, the algorithm we learn at school is not the one published by Dijkstra. It has a complexity of O(n²) while we are teached that complexity
 of the algorithm is O(n·log(n)).
 
-We must wait 28 year to get to it.
+We had to wait 28 year to get to it.
 
 1987: Tarjan
 ************
@@ -62,7 +62,7 @@ a combination of all that.
 On a recent computer, computing a route across France takes around a second. Therefor back in the 90’s it was way to slow. There was a need to
 speed up the computation.
 
-We must wait 18 year to get to it.
+We had to wait 18 year to get to it.
 
 2005: Dimacs challenge and rise of the KIT
 ******************************************
