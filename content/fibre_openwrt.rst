@@ -62,7 +62,7 @@ Pour accéder uniquement au flux internet, installez le paquet vlan de votre dis
 
 
 Ça y est ! Vous avez la plus grosse connexion. Selon les sites de tests, le débit était entre 500 et 800 Mbps et mon disque dur est trop lent pour
-tester si effectivement sur un gros téléchargement et je plafonne à 50 Mo/s.
+tester si effectivement sur un gros téléchargement je plafonne à 50 Mo/s.
 
 C’est bien, mais j’aimerais autant avoir le wifi. J’ai donc acheté un petit `routeur wifi <http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd>`_.
 
