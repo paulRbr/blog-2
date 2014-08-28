@@ -5,6 +5,7 @@ AUTHOR = u"Tristram Gräbener"
 SITENAME = u"Tristram: life and opinions"
 SITEURL = 'http://blog.tristramg.eu'
 
+THEME = "notmyidea-tristram"
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'fr'

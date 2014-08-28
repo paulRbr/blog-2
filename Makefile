@@ -14,7 +14,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=tristramg.eu
 SSH_PORT=22
 SSH_USER=tristram
-SSH_TARGET_DIR=/home/tristram/blog
+SSH_TARGET_DIR=/home/tristram/www/blog
 
 DROPBOX_DIR=~/Dropbox/Public/
 
