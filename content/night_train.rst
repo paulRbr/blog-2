@@ -80,7 +80,7 @@ Aaaah ! Les Trenhotel Elipsos ! C’était des trains Talgo qui étaient utilis
 Le positionnement était relativement haut de gamme : les compartiments de la classe touriste n’accueillent que 4 passagers, contre 6 habituellement même si l’aménagement intérieur datait des années 80.
 Le fait que ce soient des Talgo rendent le voyage exceptionnellement agréable.
 
-Il y a une voiture bar et une voiture restaurant. Je me suis posé au bar pour commander un peu de vin. Une véritable machine à expresso est accrochée au comptoir trop étroit pas des sangles.
+Il y a une voiture bar et une voiture restaurant. Je me suis posé au bar pour commander un peu de vin. Une véritable machine à expresso est accrochée au comptoir trop étroit par des sangles.
 Les commandes fusent pour servir la voiture restaurant « 3 cafés, 1 cognac, 2 cava et 4 crèmes catalanes », un serveur fait la plonge dans un coin pour préparer le service suivant.
 
 Entre la qualité du matériel et le service un peu meilleur sans pour autant être une croisière de luxe comme certaines variantes de l’Orient-Express c’est une grande perte.
@@ -96,7 +96,7 @@ Je pourrais encore parler longtemps des trains de nuit :
 * la fois où j’ai payé le billet d’un jeune homme qui a du arrêter son voyage en Scandinavie parce qu’il avait perdu son pass Interrail
 * mes navettes régulières entre Toulouse et Paris
 * l’horreur des TGV de nuit
-* la magie des train de nuit qui roulent de jour
+* la magie des trains de nuit qui roulent de jour
 
 
 
