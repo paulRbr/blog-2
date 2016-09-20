@@ -123,7 +123,7 @@ prestation de service que dans les start-ups).
 
 De même, il est habituel que les futurs collègues soient embauchés après avoir
 rencontré des pairs. Étendre ce fonctionnement pour choisir les coordinateurs et
-supérieurs qui se chargerons de la vue d’ensemble ou de la stratégie ne semble
+supérieurs qui se chargeront de la vue d’ensemble ou de la stratégie ne semble
 donc pas si délirant.
 
 C’est bien beau de parler
