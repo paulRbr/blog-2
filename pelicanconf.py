@@ -4,6 +4,7 @@
 AUTHOR = u"Tristram Gräbener"
 SITENAME = u"Tristram: life and opinions"
 SITEURL = 'https://blog.tristramg.eu'
+STATIC_PATHS = ['.well-known/keybase.txt']
 
 THEME = "notmyidea-tristram"
 TIMEZONE = 'Europe/Paris'

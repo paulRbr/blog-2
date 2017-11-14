@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/tristramg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.tristramg.eu
+  * I am tristramg (https://keybase.io/tristramg) on keybase.
+  * I have a public key with fingerprint 0B38 D6BD D015 EBB5 B282  D0C9 4833 63EE 7D66 9C39
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012099f3006714f972c88bdd932d6aaa801c69457697fbd20471a33e32863f9f57ae0a",
+      "fingerprint": "0b38d6bdd015ebb5b282d0c9483363ee7d669c39",
+      "host": "keybase.io",
+      "key_id": "483363ee7d669c39",
+      "kid": "01013dbffd0352dbd0893a743d40bedd9a5c82ea11998ce4ded06df74a246c25a10b0a",
+      "uid": "5cbcb27a36cd19542bf119114e941e19",
+      "username": "tristramg"
+    },
+    "merkle_root": {
+      "ctime": 1510674481,
+      "hash_meta": "99bb15c231e1ca2fa10179c535b8d3991ed43f7450cbb5e7871d681d5cce03d1",
+      "seqno": 1703557
+    },
+    "revoke": {
+      "sig_ids": [
+        "e731841a248385bf9e0989cd430cc42b05b5055f0a663a2605c10d46d11ec5410f"
+      ]
+    },
+    "service": {
+      "hostname": "blog.tristramg.eu",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1510674524,
+  "expire_in": 157680000,
+  "prev": "76ebbd5f25b3742ca7e928cd6c8060a997d89eaa9afabbf2999604364bafbfc1",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMQBAnicbZN9TFZVHMdBsenjXKDJfIv0apslwTn33nPvPWyQocyXVoQKTgWfztuF
+u+cNnxcQ4ampTEKdJmpiomyZos7m0pIwTUUz0WlQUTnNGpq9qKzUMtK08zBtc+v+
+c3fv/f6+v8/ve3/n+KC+ca74qRrrjtoNOP50a1Ukbu7AxMJKhQZ4hZJRqXhE7014
+uQiF3R6HKxkKgCrA2NYAMEyo29hUmWVRzrGmcoMQYgHIDKwj08CmTbkKdBMSTROa
+ahmajW1kEgGIkqrYjr9YBEuDjj8cs6WaxQ3pAyASlCKqWioHDOuWphmaECY3DMw0
+LAtLAqFYhYSjJCTSnIB8Jx/cvXj/o3/IDaDGqW1zoCGVUw4srBFT17gOqJD8BDFL
+FQRCjC0mdC44MLht6kTVDaYiAgHt5Y702iFGGVVNohmMQ4x0ldqyEkJdYB0KGOsb
+CYmgn/iEVIeDTigcJL5iJZqq+ETQ4xXuYCAQjqXLwk5MAxGUieq6BeWEJFTi9okw
+kaUYUwoRUzXpyohqSw5oYoY0RC2uYQwF1zWJiQCTsQnTMiE3LMgRYwJoHEqQkFjg
+D8gOppwcmZIgKMoCHhFrHnKKZW4hJWOeIkwNWjqU41qahaiNBcAWZtIdMCbnA4gi
+gJANiGFoRDUAYhBw3eAQCoZ0CGylKBprFixzWK957Ec9CIB6A8Vp/6WQJiISqzQY
+CAdYwCs/l4TDpaGMWDjhitKYvlxQ9wMnN3X8XO6KrCgTwZAT8MtRpPLR3JCqpypi
+YakTFG4nppALaAF5xfqIMmlpGnKvOLJVRDVTVxkxBVYtxg1mAQMQjE1uYUEIJjah
+1FYxxgbQNUOnxKY2eyRIyUmKpaeMz0/CkaBQoq1HCxPi4l1xj/XrEztEca4BiQ+P
+1ohLj/+TFL/r9uCu11ZuWn60KyuS8k4yaurc6qRvrmvrWjtjzcGqft7L8EjHdtCy
+yGZHp7b8lb/hpaa+Ted1Wt6+4GLn8ftHriQPuXn5w+jw3ecugKpXWC3Py+/p/0U1
+76wdnTDo44F/38g9M6eoY+4nkVojZWbBdG3i/vRT2QW77p1KXrf0j/P1gfKhO76s
+WDXkqa5u7+gJ4ZRZ69+4OL5h7YEtw/f0/GyeJU9PX13iamq+MHFGDlzr+rS71e73
+Zp9RRzaOvda5I7vq69c/Go3XlNR2vl9h1z2TtfESm3BsxaqdN7YV1TfuK0jIPJF7
+rz1/2cG2AZMry+9nLK7xze1pvH4C7fn+7i9Lbp/smJJ6tfLalC3j0ps2dG/Jy6tO
+68hufnZgSrEx7LnF+6+PWV/59ub6ke6fqm/Wfjbtz1XrMhOHp3Xt+mpEW7PTePe7
+tt2jahO6c/esPxvaWzfPHju4cO/C/Mj87Fu/enyFSf1/O+atmDXsTr4rC497efmB
+0KnPD6Vt/6FsUgluHgrzlqan5D6/PytSFDftxNZbVw9/U+UpfTFnRc2Zyu7q02/p
+C957wjX2g9ZXr7ab6IXU5JzokztrCrYm/t5yeGTnyfRzhyYfNpMaD4yvuTFomTG7
+oR2oM68kmfuWDPVtOntwUeZ8dc63DfejK2utlnM3J12+Uz9795jtbRt6Zp05tvfH
+An9dvSvh3ZzlmVUeFtn2L3mkA54=
+=BuYp
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tristramg
+
+==================================================================
