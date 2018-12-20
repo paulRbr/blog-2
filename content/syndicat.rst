@@ -6,7 +6,7 @@ Pourquoi je me suis syndiqué
 
 Il y a deux ans et demi, dans un `blogpost <https://blog.tristramg.eu/anarchy-in-the-it.html>`_, j’avais conclu que se syndiquer aurait pu être une piste pour maintenir un peu de démocratie au sein de l’entreprise.
 
-J’ai finalement passé ce cap en juillet ; j’ai adhéré à la `CNT <https://www.cnt-f.org>`_. J’ai choisi ce syndicat anarchiste par sympathie pour le communisme anti-autoritaire et parce que les syndicats de la fédération CNT sont organisés par industrie. Ainsi, dans une entreprise, il n’y aura pas un syndicat pour les cadres et un autre pour les travailleurs, comme cela peut arriver à la CGT (ce qui n’aide pas trop la lutte des classes…).
+J’ai finalement passé ce cap en juillet ; j’ai adhéré à la `CNT <http://www.cnt-f.org>`_. J’ai choisi ce syndicat anarchiste par sympathie pour le communisme anti-autoritaire et parce que les syndicats de la fédération CNT sont organisés par industrie. Ainsi, dans une entreprise, il n’y aura pas un syndicat pour les cadres et un autre pour les travailleurs, comme cela peut arriver à la CGT (ce qui n’aide pas trop la lutte des classes…).
 
 Mais pourquoi diable se syndiquer lorsque tout baigne pour moi ? Côté privilèges, je suis au top : mâle blanc, cisgenre, milieu trentaine, fils d’intellos, trop diplômé, aimant un métier très porteur. Côté boulot, j’ai toute la protection sociale d’un salarié tout en pouvant faire la fine bouche grâce à `Codeurs en Liberté <https://www.codeursenliberté.fr>`_, à temps partiel tout en gagnant presque trois fois le SMIC.
 
