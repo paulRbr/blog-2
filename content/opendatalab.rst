@@ -90,12 +90,15 @@ Voici le résultat (clic-droit afficher l’image pour l’avoir un plus grand)
 
 .. image:: images/original_paris.png
     :width: 750px
+    :alt: L’image originale de Paris
 
 .. image:: images/paris_by_ratp_no_overlay.png
     :width: 750px
+    :alt: L’image sans superposition
 
 .. image:: images/paris_by_ratp.png
     :width: 750px
+    :alt: L’image avec superposition
 
 Conclusion
 **********

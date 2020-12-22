@@ -16,7 +16,7 @@ Formally we would speak of “shortest path in a graph problem”. The goal is t
 
 Route computation are nice as the actual use cases can be explained to anyone:
 
-* the GPS end user 
+* the GPS end user
 * the computer science student that at some point learnt the basic algorithms
 * there is still research going on, but it can be explained to anyone interested within a few pints
 
@@ -106,7 +106,7 @@ The question was already studied in 1991 in the great PhD thesis of Eduard Tulp.
 Performances are deceiving and trying to use the successes in street network failed.
 
 In the article `Car or Public Transport—Two Worlds <http://link.springer.com/chapter/10.1007/978-3-642-03456-5_24>`_ H. Bast show the differences
-that exist between both means of transportation and that is not interesting to try to use the same techniques. 
+that exist between both means of transportation and that is not interesting to try to use the same techniques.
 
 2010: transfer patterns, performance, at last!
 **********************************************
@@ -129,6 +129,7 @@ The proposed approach has no need for pre-processing and has better performances
 Hooray! Cars do not have any more the monopole on efficient algorithm. Raptor has the advantage to be rather simple and to have nice properties (too technical to bother you with them).
 
 .. image:: images/zoidberg_hooray.jpg
+    :alt: Zoidberg from Futurama saying hooray
 
 Intermission: opendata and science
 **********************************

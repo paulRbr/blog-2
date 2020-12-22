@@ -19,18 +19,21 @@ C’est un véhicule
 Les plus obtus me répondront que c’est bien évidemment ceci :
 
 .. figure:: images/trains/talgo.jpg
+ :alt: Image de talgo
 
  Le premier modèle de `Talgo <https://fr.wikipedia.org/wiki/Talgo>`_, un fabriquant espagnol à connaitre et à aimer
 
 ou encore ceci
 
 .. figure:: images/trains/autoferro.jpg
+ :alt: Un autoferro
 
  Un *autoferro* en Équateur qui emmène des touristes sur `La Nariz del Diablo <https://fr.wikipedia.org/wiki/La_Nariz_del_Diablo>`_
 
 Vous pensez donc au véhicule qui roule sur des rails (ou presque, ne chippotons pas sur la définition de rail ; c’est déjà assez bien compliqué).
 
 .. figure:: images/trains/transrapid.jpg
+ :alt: Un transrapid
 
  Le `Transrapid de Shanghai <https://fr.wikipedia.org/wiki/Transrapid_de_Shanghai>`_, premier train à sustentation magnétique en service commercial
  conçu en Allemagne par Siemens
@@ -42,6 +45,7 @@ Le Train `9551` qui quitte Paris à 7h06 pour arriver à Frankfort à 10h58 ne v
 Ce sont même parfois des TGV Duplexe qui les remplacent.
 
 .. figure:: images/trains/ice9551.jpg
+ :alt: Un Ice
 
  … et parfois ce train arrive sur deux quais en même temps…
 
@@ -53,6 +57,7 @@ Un identifiant de locomotive
 Parfois les rames se font des bisous
 
 .. figure:: images/trains/jumeau.jpg
+  :alt: Des trains jumeaux
 
   Deux ICE3, l’un appartement là Deutsche Bahn, l’autre aux chemins de fer néerlandais
 

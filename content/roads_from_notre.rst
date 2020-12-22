@@ -20,6 +20,7 @@ Since my laptop is a 4 years old netbook and due to my laziness to optimise my c
 the example will only cover France and not Europe on the whole.
 
 .. figure:: images/roads_from_nd_small.png
+  :alt: Generated image of the roads from Notre-Dame
   :target: images/roads_from_nd_xxl.png
 
   Final result. Click for a higher resolution (144 Megapixels, 20Mb)
@@ -42,6 +43,7 @@ also reads ferry routes. This allows us to reach Corsica and other islands.
 *************************
 
 .. figure:: images/point_zero.jpg
+  :alt: Imagine of the point zero of all roads in France
 
   CC BY-SA 3.0 Jean-Pierre Bazard (from Wikimedia commons)
 

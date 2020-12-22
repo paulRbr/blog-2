@@ -19,6 +19,7 @@ le même nom que ma mère et qui propose une recette qui fonctionne ! La voici :
 Vu le succès qu’ont ces pains, je dévoile le secret.
 
 .. image:: images/pan_de_yuca.jpg
+    :alt: Un pain de manioc
     :width: 750px
 
 Ingredients pour 24 pains (soit 4 personnes)
