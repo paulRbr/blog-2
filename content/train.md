@@ -21,7 +21,7 @@ fabriquant espagnol à connaitre et à aimer](images/trains/talgo.jpg)
 
 ou encore ceci
 
-![Un *autoferro* en Équateur qui emmène des touristes sur [La Nariz del Diablo](https://fr.wikipedia.org/wiki/La_Nariz_del_Diablo)](/images/trains/autoferro.jpg)
+![Un *autoferro* en Équateur qui emmène des touristes sur [La Nariz del Diablo](https://fr.wikipedia.org/wiki/La_Nariz_del_Diablo)](../images/trains/autoferro.jpg)
 
 Vous pensez donc au véhicule qui roule sur des rails (ou presque, ne
 chippotons pas sur la définition de rail ; c'est déjà assez bien
@@ -37,7 +37,7 @@ Frankfort à 10h58 ne veut pas dire que c'est toujours la même rame ICE3
 qui fait le trajet. Ce sont même parfois des TGV Duplexe qui les
 remplacent.
 
-![... et parfois ce train arrive sur deux quais en même temps...](/images/trains/ice9551.jpg)
+![... et parfois ce train arrive sur deux quais en même temps...](../images/trains/ice9551.jpg)
 
 Un train est donc l'identifiant d'un trajet régulier entre deux villes.
 
@@ -45,7 +45,7 @@ Un train est donc l'identifiant d'un trajet régulier entre deux villes.
 
 Parfois les rames se font des bisous
 
-![Deux ICE3, l'un appartement là Deutsche Bahn, l'autre aux chemins de fer néerlandais](/images/trains/jumeau.jpg)
+![Deux ICE3, l'un appartement là Deutsche Bahn, l'autre aux chemins de fer néerlandais](../images/trains/jumeau.jpg)
 
 Dans ce cas les trains ont deux numéros de trains, même si le train ne
 se sépare pas.

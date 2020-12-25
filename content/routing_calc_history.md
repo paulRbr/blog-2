@@ -159,7 +159,7 @@ Hooray! Cars do not have any more the monopole on efficient algorithm.
 Raptor has the advantage to be rather simple and to have nice properties
 (too technical to bother you with them).
 
-![Zoidberg from Futurama saying hooray](/images/zoidberg_hooray.jpg)
+![Zoidberg from Futurama saying hooray](../images/zoidberg_hooray.webp)
 
 # Intermission: opendata and science
 

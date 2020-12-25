@@ -13,7 +13,7 @@ Lisez la suite si vous savoir comment faire.
 
 Nous allons utiliser le Plan Turgot de 1734. C’est à peu près la
 première carte de Paris qui soit suffisemment fiable. Plus
-d\’information sur \... Wikipedia *of course* :
+d’information sur ... Wikipedia *of course* :
 <http://fr.wikipedia.org/wiki/Plan_de_Turgot>
 
 Je me suis pas mal basé sur ce billet :
@@ -35,7 +35,7 @@ suffisante), on va créer un fichier GeoTIFF qui est une image
 géo-tagguée. J’ai utilisé `gdal_translate` (paquet GDAL de votre
 distribution GNU/Linux favorite)
 
-```
+```sh
 gdal_translate  -a_srs EPSG:4326 -gcp 4338 4074 2.323681 48.864527  -gcp 170 2069 2.377336 48.865656  -gcp 4940 4975 2.310114 48.868959 -gcp 1626 1112 2.373795 48.851863 -gcp 3566 463 2.3641 48.83893 -gcp 2925 3466 2.34119 48.865739  Plan_de_Turgot.jpg Turgot2.tiff
 ```
 
@@ -53,7 +53,7 @@ utilisent des « tuiles » qui sont des images de 256×256 pixels et il
 faut les générer pour chaque niveau de zoom. Pour cela j’ai utilisé un
 petit script Python gdal2tiles.py.
 
-```
+```sh
 python gdal2tiles.py -p mercator -z '12-18' Turgot2.tiff
 ```
 

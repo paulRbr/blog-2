@@ -22,7 +22,7 @@ Since my laptop is a 4 years old netbook and due to my laziness to
 optimise my code, the example will only cover France and not Europe on
 the whole.
 
-![Final result. Click for a higher resolution (144 Megapixels, 20Mb)](/images/roads_from_nd_small.png)
+[![Final result. Click for a higher resolution (144 Megapixels, 16Mb)](../images/roads_from_nd_small.webp)](../images/roads_from_nd_xxl.webp)
 
 Data from OpenStreetMap under ODbL
 
@@ -43,7 +43,7 @@ reads ferry routes. This allows us to reach Corsica and other islands.
 
 # 2. Compute all the routes
 
-![CC BY-SA 3.0 Jean-Pierre Bazard (from Wikimedia commons)](/images/point_zero.jpg)
+![CC BY-SA 3.0 Jean-Pierre Bazard (from Wikimedia commons)](../images/point_zero.webp)
 
 So we extracted a nice graph, with realistic travel durations. We now
 want to compute all the routes that start from Notre-Dame. Indeed, while

@@ -104,11 +104,11 @@ annoncée, mais pas encore disponible.
 Voici le résultat (clic-droit afficher l’image pour l’avoir un plus
 grand) :
 
-![L’image originale de Paris](/images/original_paris.png)
+![L’image originale de Paris](../images/original_paris.webp)
 
-![L’image sans superposition](/images/paris_by_ratp_no_overlay.png)
+![L’image sans superposition](../images/paris_by_ratp_no_overlay.webp)
 
-![L’image avec superposition](/images/paris_by_ratp.png)
+![L’image avec superposition](../images/paris_by_ratp.webp)
 
 # Conclusion
 

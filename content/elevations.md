@@ -87,7 +87,7 @@ projet vierge comme [couche raster](http://hub.qgis.org/projects/quantum-gis/wik
 On obtient une image en niveau de gris, et on reconnait la Seine et ses
 boucles, la Marne et d’autres affluents :
 
-![Paris brut](/images/elevations/paris_brut.png)
+![Paris brut](../images/elevations/paris_brut.webp)
 
 ### Des couleurs !
 
@@ -99,7 +99,7 @@ pour un gradient de rouges pour représenter environ 100 m d’écart.
 
 Le résultat est un peu décevant :
 
-![niveaux en rouge](/images/elevations/paris_rouges.png)
+![niveaux en rouge](../images/elevations/paris_rouges.webp)
 
 ## Des ombres
 
@@ -113,14 +113,14 @@ au travers du menu `Raster>Analysis>DEM (Terrain Models)`.
 
 Le résultat est finalement plus proche de ce qu’on imagine :
 
-![Ombres du relief](/images/elevations/paris_ombres.png)
+![Ombres du relief](../images/elevations/paris_ombres.webp)
 
 ## Combinons les deux
 
 Nous choissions la fusion des deux couches (_blending_) avec le mode
 _multiply_ pour obtenir l’image suivante :
 
-![Ombres et couleurs](/images/elevations/paris_combiné.png)
+![Ombres et couleurs](../images/elevations/paris_combiné.webp)
 
 ## Courbes de niveau
 
@@ -140,7 +140,7 @@ En répétant l’opération pour obtenir les courbes tous les 50 mètres,
 puis en jouant avec les styles dans QGis, il est possible d’obtenir le
 rendu suivant :
 
-![Courbes de niveau](/images/elevations/paris_iso.png)
+![Courbes de niveau](../images/elevations/paris_iso.webp)
 
 Pour une utilisation ultérieure, nous convertissons les fichiers
 _shapefile_ en _GeoJSON_ dont les coordonnées seront en `(lon ; lat)`

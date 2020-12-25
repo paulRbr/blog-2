@@ -14,7 +14,7 @@ de faire ses propres cartes.
 
 Quelques exemples de cartes sont visibles sur [mon compte flickr](https://www.flickr.com/photos/tristramg/albums/72157672219472853).
 
-![Routes depuis Niamey, Niger](/images/routes_depuis/africa.png)
+![Routes depuis Niamey, Niger](../images/routes_depuis/africa.webp)
 
 ## osm4routing en rust
 
@@ -40,7 +40,7 @@ Parmi les limitations notables de ce projet :
 Pour toutes ces raisons, et aussi pour avoir un prétexte d’écrire en [Rust](https://www.rust-lang.org/),
 j’ai écrit une [nouvelle version](https://github.com/Tristramg/osm4routing2) corrigeant ces défauts.
 
-![Routes depuis Cayo, Équateur](/images/routes_depuis/south_america.png)
+![Routes depuis Cayo, Équateur](../images/routes_depuis/south_america.webp)
 
 ## Roads from Notre-Dame
 
@@ -63,4 +63,4 @@ Si vous souhaitez créer votre propre carte, voici les étapes :
 Si vous diffusez l’image générée, n’oubliez pas d’attribuer le droit d’auteur
 aux [contributeurs OpenStreetMap](https://www.openstreetmap.org/copyright).
 
-![Routes depuis Tokyo, Japon](/images/routes_depuis/japan.png)
+![Routes depuis Tokyo, Japon](../images/routes_depuis/japan.webp)
