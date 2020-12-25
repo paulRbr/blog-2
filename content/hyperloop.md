@@ -36,9 +36,9 @@ pas dire trop de bêtises que je regretterai.
 
 # Résumé technique
 
-1.  On créé un grand grand tuyaux donc la pression de l’air est faible
+1.  On créé un grand grand tuyau, dont la pression de l’air est faible
     (pas sous vide, ça coute trop cher)
-2.  On fait circuler à l’intérieur des pods de 28 passagers avec un gros
+2.  On fait circuler à l’intérieur des _pods_ de 28 passagers avec un gros
     ventilateur pour chasser le peu d’air qui reste
 3.  Très espacés, des moteurs linéaires ré-accélèrent la capsule
 
