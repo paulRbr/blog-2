@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ page.title }}</h2>
+<p class="subtitle">{{ page.date }}</p>
+<article>
+{{ page.content | safe }}
+</article>
+{% endblock content %}
