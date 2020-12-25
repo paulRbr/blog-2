@@ -5,7 +5,7 @@ category = "rouge-noir"
 +++
 
 Il y a deux ans et demi, dans un
-[blogpost](https://blog.tristramg.eu/anarchy-in-the-it.html), j’avais
+[blogpost](@/democratie.md), j’avais
 conclu que se syndiquer aurait pu être une piste pour maintenir un peu
 de démocratie au sein de l’entreprise.
 
