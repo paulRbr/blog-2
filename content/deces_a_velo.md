@@ -86,7 +86,7 @@ constructif comme démarche. Comment alors ?
 
 Par des statistique pardi ! En se renseignant sur les causes de décès.
 Il s’agit dans la majorité de cas d’accidents avec des gros véhicules
-(bus, camion poubelle). Le seul vrai meutrier est l’angle mort. Ne
+(bus, camion poubelle). Le seul vrai meurtrier est l’angle mort. Ne
 dépassez jamais par la droite : règle toute simple qui — contrairement
 au port du casque — rendra tout le suite le vélo moins dangereux par
 kilomètre parcouru que la voiture.
@@ -97,7 +97,7 @@ Série de faits divers macabres pour étayer mon propos :
     <http://www.leparisien.fr/paris-75/paris-une-jeune-cycliste-ecrasee-par-un-camion-31-01-2013-2528229.php>
 -   2013
     <http://www.mairie2.paris.fr/mairie02/jsp/site/Portal.jsp?document_id=13122&portlet_id=1259>
--   2012 Année sans cycliste décèdé à Paris
+-   2012 Année sans cycliste décédé à Paris
 -   2011
     <http://www.leparisien.fr/paris-75/un-chauffeur-de-bus-devant-la-justice-apres-le-deces-d-une-femme-en-velib-06-12-2011-1755321.php>
 -   2009

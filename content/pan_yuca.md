@@ -52,7 +52,7 @@ chaque fois.
 
 # Cuisson
 
--   Pré-chauffez le four à 250°
+-   Préchauffez le four à 250°
 -   Placez les boulettes bien espacées sure une plaque
 -   Cuisez les boulettes environ 7 minutes
 -   Dès que c'est doré, c'est bon

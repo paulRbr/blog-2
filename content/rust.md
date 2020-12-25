@@ -27,7 +27,7 @@ qu’on lit sur le disque dur la suite, avoir plus de fps à Wolfenstein,
 etc.
 
 Des approches, il y en a plein ! Le problème permanent c’est comment
-faire communiquer ces bouts de code qui tournent côte-à-côte.
+faire communiquer ces bouts de code qui tournent côte à côte.
 
 ## Multiprocess
 
@@ -85,7 +85,7 @@ Par sécurité j’entends quatre choses :
 
 -   Pas de valeur nulle (impossible d’avoir une `NullPointerException`)
 -   Pas de fuite mémoire
--   Pas d’accès à la mémoire où on a pas le droit
+-   Pas d’accès à la mémoire là où on n’a pas le droit
 -   Pas d’accès concurrent
 
 Rust répond à cette problématique en proposant trois manière de
@@ -161,7 +161,7 @@ de possession des objets et que l’approche Rust est très agréable.
 Il y a d’autres détails que j’aime bien en Rust, les voici en vrac :
 
 -   Le compilateur se base sur [LLVM](http://fr.wikipedia.org/wiki/LLVM)
-    ce qui évite de ré-inventer la roue pour les optimisations à la
+    ce qui évite de réinventer la roue pour les optimisations à la
     compilation
 -   Par défaut on a que des constantes. Il faut explicitement demander
     des variables mutables
@@ -186,7 +186,7 @@ bon compromis performances/nombre de concepts. Seule la sécurité n’a pas
 
 Malheureusement, ce n’est pas vraiment utilisable en production car
 l’évolution est encore assez rapide. J’ai hâte qu’une version 1 sorte et
-que j’ai l’occasion de m’en servir pour un vrai projet.
+que j’aie l’occasion de m’en servir pour un vrai projet.
 
 Si vous voulez l’essayer, il est conseillé d’utiliser la branche
 *master* de leur dépôt GitHub. La communauté est très sympathique sur

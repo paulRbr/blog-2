@@ -6,12 +6,12 @@ draft = true
 +++
 
 [Navitia](https://navitia.io/) permet de manipuler les horaires de
-transports en commun. Parmis la penta-chiée de fonctionnalités, il y a
+transports en commun. Parmi la penta-chiée de fonctionnalités, il y a
 par exemple le calcul d’itinéraire, des fiches horaires, et tellement
 plus.
 
 J’ai pu y contribuer pendant trois ans, mais surtout j’ai pu être témoin
-de la mise en place d’un joli éco-système et rencontrer de nombreuses
+de la mise en place d’un joli écosystème et rencontrer de nombreuses
 personnes qui ont rajouté leur pierre à l’édifice de l’information
 voyageur. Sans grand coup d’éclat ni grande star, mais patiemment,
 petit pas par petit pas.
@@ -23,7 +23,7 @@ souhaitant pas de continuer dans la recherche pure, je cherchais un
 travail.
 
 J’étais tombé sur une vidéo de [Yann Le Tilly](https://twitter.com/transid) où il vantait les mérites de
-OpenStreetMap. Cela m’a motivé à faire une candidature spontannée,
+OpenStreetMap. Cela m’a motivé à faire une candidature spontanée,
 malgré leur site web miteux — même pour l’époque — et l’emplacement
 douteux de [leurs locaux](https://www.openstreetmap.org/search?query=boulevard%20poniatowski#map=16/48.8297/2.3918).
 

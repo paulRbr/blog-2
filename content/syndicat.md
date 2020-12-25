@@ -31,7 +31,7 @@ conflits et changer la société.
 # Is this real life?
 
 Entre mes amis d’école d’ingénieur, les collègues, je traine
-essentiellement un milieu très homogène, parmis les 20% des revenus les
+essentiellement un milieu très homogène, parmi les 20% des revenus les
 plus élevés de France (voire 10% !). Nos discussions politiques sont
 généralement hors sol. Soit très théoriques, soit très techniques, mais
 déconnectées d’un bon nombre de réalités.

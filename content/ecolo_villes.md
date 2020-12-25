@@ -27,7 +27,7 @@ anti-éoliennes, anti-trains,…
 # Écolo des villes
 
 Bon, sauf que moi, je suis ingénieur, j’aime les chiffres, j’aime voir
-les choses dans sa globalité, imaginer un mode de vie qui passe à
+les choses dans leur globalité, imaginer un mode de vie qui passe à
 l’échelle. Donc, deux chiffres issus des [statistiques ministérielles](http://www.statistiques.developpement-durable.gouv.fr/publications/publication/1811/969/bilan-energetique-france-2010-2.html):
 
 -   2ème source d’émissions de CO2 en France : la voiture particulière
@@ -64,7 +64,7 @@ blanche, mais dans le présent, je préfère Paris.
 Bon, j’ai dit de la merde sur la part de la voiture individuelle. Elle
 ne représente en fait « que » 20% des émissions de CO₂. Merci à Maxime
 d’avoir relevé l’erreur. J’avais confondu « la part de la voiture dans
-les transports individuelle » avec « la part de la voiture individuelle
+les transports individuels » avec « la part de la voiture individuelle
 dans les transports ».
 
 Cela m’a permis de trouver des chiffres intéressants qui vont dans le

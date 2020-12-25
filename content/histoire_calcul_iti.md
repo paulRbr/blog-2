@@ -73,7 +73,7 @@ calcul d'itinéraire. À cette occasion le [réseau routier des
 diffusé.
 
 De très nombreuses publications ont pulvérisé tous les records. On peut
-desormais calculer un itinéraire entre deux points de la planète en
+désormais calculer un itinéraire entre deux points de la planète en
 moins d'une milliseconde (soit des *milliers* de fois plus rapide que
 l'algorithme de Dijkstra).
 

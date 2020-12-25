@@ -4,7 +4,7 @@ date = 2012-01-07
 title = "Paris en 1734"
 +++
 
-Hoplà ! Ce coup-ci c’est pas du tout polémique. Just un mini-tuto sur
+Hoplà ! Ce coup-ci c’est pas du tout polémique. Juste un mini-tuto sur
 comment superposer une vieille carte sur une toute nouvelle.
 
 Voici le résultat : <http://vrac.tristramg.eu/Turgot2/openlayers.html>
@@ -66,5 +66,5 @@ python gdal2tiles.py -p mercator -z '12-18' Turgot2.tiff
 # Mettre tout ça sur une carte
 
 gdal2tiles.py génère des fichiers tout fait. Donc c’est une version de
-feignasse, mais qui marche plutot bien. J’ai un peu traficoté le code
+feignasse, mais qui marche plutôt bien. J’ai un peu traficoté le code
 html généré pour OpenLayers mais rien de sorcier.
