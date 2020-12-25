@@ -98,7 +98,7 @@ d’innover, on tombera toujours dans une entreprise désenchantée.
 Enfin, il y a la bonne vieille peur d’AG sans fin pour un oui ou pour un
 non. Mais de mon expérience, une nouvelle tombée du ciel, qui fait jaser
 les travailleurs, et qui leur donne juste envie d’aller ensemble au bar
-à 17h n’est pas plus productif. À l’opposé, faire mûrir une idée pour
+à 17h n’est pas plus productif. À l’opposé, faire murir une idée pour
 qu’elle finisse par devenir évidente permet une mise en œuvre finalement
 plus rapide car appropriée par tous ceux que ça concerne.
 

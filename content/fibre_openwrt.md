@@ -9,7 +9,7 @@ title = "Fibre free sans freebox"
 La fibre avec Freebox v5 est limitée à 30 Mbps (mais au moins c’est
 symétrique).
 
-Cette limitation disparait avec la Freebox Révolution qui coûte 70€/an.
+Cette limitation disparait avec la Freebox Révolution qui coute 70€/an.
 
 En se branchant en ethernet, on peut dépasser les 500 Mbps.
 
@@ -29,7 +29,7 @@ En arrivant à Paris, j’avais une pauvre connexion 16 Mbps et seulement
 qui avaient SFR ou Orange avaient la fibre.
 
 Tous les gros coups de pieds dans la fourmilière et le dirigeant qui est
-devenu milliardaire en trollant, m’ont fait refuser d’aller voir les
+devenu milliardaire en trollant, m’ont fait refuser d’aller voir le
 autres concurrents, même pendant les quelques mois où youtube était
 devenu inutilisable.
 

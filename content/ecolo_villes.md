@@ -8,7 +8,7 @@ J’ai une étiquette d’écolo et j’ai déménagé à Paris. Beaucoup de gen
 s’étonnent comment moi, amoureux de la nature, je fais pour vivre dans
 le béton et la pollution.
 
-Pour faire simpliste (parce que la subtilité n’est pas le maître mot par
+Pour faire simpliste (parce que la subtilité n’est pas le maitre mot par
 ici), derrière le mot « écologie » on peut foutre principalement deux
 choses qui se contredisent parfois dans les idéaux et souvent dans la
 vie quotidienne.
