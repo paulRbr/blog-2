@@ -4,6 +4,15 @@ title = "Rust un langage prometteur"
 category = "tech"
 +++
 
+{% update(date="2020-12-26") %}
+Ze suis toujours aussi fan du Rust et j’ai pu en faire professionnellement. Et ce blog a été réécrit en utilisant
+[zola](https://www.getzola.org/).
+
+Par contre, l’évolution est amusante : presque tout ce que je détaille n’est plus d’actualité, d’autres approches ont été utilisées.
+
+Mais reste le plus important : on a une alternative au C++ sûre et plaisante à utiler.
+{% end %}
+
 Je me suis intéressé au langage [Rust](http://www.rust-lang.org/). Et je
 pense qu’il mérite que vous vous intéressiez également. Le problème
 c’est que je me suis un peu emballé et cet article est devenu un peu

@@ -1,12 +1,12 @@
+@use "sass:map";
 @import "normalize";
 
-$theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
-  'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
-  'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
-);
+$theme-color-default: #c05b4d;
+$theme-color-Mint-Green: #16982B;
+$theme-color-Cobalt-Blue: #0047AB;
+$theme-color-Hot-Pink: #FF69B4;
+$theme-color-Dark-Violet: #9932CC;
+
 
 $text-colour: #34495e;
 $main-colour: #c05b4d;
@@ -149,13 +149,33 @@ blockquote {
     margin: 2em 0;
     padding: 10px 20px;
     position: relative;
-    color: rgba(#34495e, 0.8);
-    background-color: rgba(192, 91, 77, .05);
-    border-left: 3px solid rgba(192, 91, 77, .3);
+    color: rgba($text-colour, 0.8);
+    background-color: rgba($theme-color-default, .05);
+    border-left: 3px solid rgba($theme-color-default, .3);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
 
     p {
       margin: 0;
+    }
+}
+
+.update {
+    margin: 2em 0;
+    padding: 10px 20px;
+    position: relative;
+    color: rgba($text-colour, 0.8);
+    background-color: rgba($theme-color-Mint-Green, .05);
+    border-left: 3px solid rgba($theme-color-Mint-Green, .3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+
+    p {
+      margin: 0;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1em;
+        font-weight: bold;
     }
 }
 

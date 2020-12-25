@@ -4,6 +4,12 @@ date = 2015-12-27
 title = "Roads from Notre-Dame"
 +++
 
+{% update(date="2020-12-26") %}
+I rewrote everything in rust for much more simplicity and explained it [a blog post in french](../routes-depuis).
+
+Examples can be seen [over here](https://cloud.tristramg.eu/index.php/s/nKTxqGmDXBNfSs2), and the code [on github](https://github.com/Tristramg/roads-from-nd/).
+{% end %}
+
 All roads lead to Rome and it makes great maps! The project [Roads to Rome](http://roadstorome.moovellab.com/) made a small buzz with their
 gorgeous maps showing a superposition of many routes that lead to Rome.
 

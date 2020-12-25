@@ -5,14 +5,14 @@ title = "Toutes les routes depuis…"
 
 Il y a quasiment un an, j’avais copié le projet
 [Roads to Rome](http://roadstorome.moovellab.com/) et décrit sur
-[mon blog personnel](http://blog.tristramg.eu/roads-from-notre-dame.html) le processus.
+[ici-même](@/roads_from_notre.md) le processus.
 
 Celui-ci était particulièrement pénible et pas vraiment réutilisable.
 
 Il était temps de faciliter la génération des données et de permettre à tout le monde
 de faire ses propres cartes.
 
-Quelques exemples de cartes sont visibles sur [mon compte flickr](https://www.flickr.com/photos/tristramg/albums/72157672219472853).
+Quelques exemples de cartes sont visibles [par ici](https://cloud.tristramg.eu/index.php/s/nKTxqGmDXBNfSs2).
 
 ![Routes depuis Niamey, Niger](../images/routes_depuis/africa.webp)
 

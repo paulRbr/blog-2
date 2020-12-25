@@ -5,6 +5,14 @@ title = "Hyperloop, un mode pas si révolutionnaire que ça"
 slug = "hyperloop-un-mode-pas-si-revolutionnaire-que-ca"
 +++
 
+{% update(date="2020-12-26") %}
+Plus de 6 ans plus tard, le projet ne semble toujours pas avoir abouti.
+
+Pendant ce temps, les TGV vont avoir 20% de capacité en plus (locomotives plus courtes permettant d’avoir une voiture en plus, plus de seconde et mois de première).
+
+La ligne Paris-Lyon, la plus saturée, va passer à 16 trains par heure et par sens (en particulier grâce à une nouvelle signalétique)
+{% end %}
+
 Après plusieurs semaines de teasing, on en sait un peu plus sur le
 projet *hyperloop*.
 

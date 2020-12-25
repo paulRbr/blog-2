@@ -4,6 +4,15 @@ date = 2011-09-14
 title = "Autolib’ ou « autopartage et gaspillage de l’espace urbain »"
 +++
 
+{% update(date="2020-12-26") %}
+Cet article a mal vieilli !
+
+Par contre sur le gaspillage d’espace, on s’y attaque enfin ! La ville de Paris veut supprimer
+plus de 50 000 places en surface (presque la moitié des places de surface, un peu moins de 10% des stationements total).
+
+Pendant le premier déconfinement, on a vu que cet espace pouvait être beaucoup mieux utilisé, par exemple pour faire des bars et rendre aux rue leur rôle de zone de vie.
+{% end %}
+
 L’autolib’ va être mis en route début octobre. En soit l’auto-partage
 n’est pas une nouveauté et existe dans toutes les [grandes villes](http://www.franceautopartage.com/FAP/FAPsocietaires.htm) de
 France.
