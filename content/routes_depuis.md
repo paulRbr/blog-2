@@ -44,7 +44,7 @@ j’ai écrit une [nouvelle version](https://github.com/Tristramg/osm4routing2) 
 
 ## Roads from Notre-Dame
 
-Une fois _osm4routing_ ré-écrit, j’ai pu ré-écrire le projet en le simplifiant considérablement :
+Une fois _osm4routing_ réécrit, j’ai pu réécrire le projet en le simplifiant considérablement :
 
 * Un seul exécutable qui fait tout ;
 * Plus de phase d’extraction du réseau routier ;

@@ -51,10 +51,10 @@ published in 1959. It has been described in a [two pages only article](http://ww
 but the name stuck as the fundamental brick of route computations.
 
 However, the algorithm we learn at school is not the one published by
-Dijkstra. It has a complexity of O(n²) while we are teached that
+Dijkstra. It has a complexity of O(n²) while we are taught that
 complexity of the algorithm is O(n·log(n)).
 
-We had to wait 28 year to get to it.
+We had to wait 28 years to get to it.
 
 # 1987: Tarjan
 
@@ -155,7 +155,7 @@ for his new algorithm.
 The proposed approach has no need for pre-processing and has better
 performances than the transfer patterns.
 
-Hooray! Cars do not have any more the monopole on efficient algorithm.
+Hooray! Cars do not have the monopoly on efficient algorithm any more.
 Raptor has the advantage to be rather simple and to have nice properties
 (too technical to bother you with them).
 
@@ -180,7 +180,7 @@ the authors present the *connection scan algorithm*. It is slightly more
 efficient than Raptor but is considerably more simple.
 
 When reading the article, and once again when implementing it, I was
-struck how braindead simple it is, but it works.
+struck how brain dead simple it is, but it works.
 
 We went through 57 years of research to end up with an algorithm that
 could have been written at the same time as Dijkstra’s.

@@ -79,7 +79,7 @@ passager.
 
 Évidemment, un TGV est beaucoup plus lent. Mais je voulais juste
 signaler que la consommation d’énergie n’est pas aussi faible que ce que
-le projet vends.
+le projet vend.
 
 En ce qui concerne l’alimentation entièrement par des panneaux
 photovoltaïques, en recouvrant toute la [LGV
@@ -104,7 +104,7 @@ place économisée.
 
 Il n’y a pas non plus de première classe : les capsules font 1,35 mètre
 de large pour deux sièges de front. Un TGV fait 2,90 m de large pour 4
-places de front (mais par honnêté, je vais rappeler l’existence d’un
+places de front (mais par honnêteté, je vais rappeler l’existence d’un
 couloir dans les TGV).
 
 En classe unique, sans wagon bar, sans toilettes, on pourrait dépasser

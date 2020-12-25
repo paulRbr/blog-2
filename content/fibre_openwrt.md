@@ -42,7 +42,7 @@ pas mon internet ?
 En décembre, j’ai reçu un coup de fil de Free pour poser la fibre. Après
 un no-show du technicien SFR (apparemment la fibre n’est pas posée par
 le FAI dans l’appartement, mais par l’entreprise qui a initialement
-fibré l’immeuble), un rendez-vous décallé par moi, la pose de la fibre,
+fibré l’immeuble), un rendez-vous décalé par moi, la pose de la fibre,
 l’intervention du technicien Free pour finir le travail fait à moitié
 par le prestataire de SFR, j’ai la Fibre!
 

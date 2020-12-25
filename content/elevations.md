@@ -10,9 +10,9 @@ J’explique ici comment créer de toutes pièces une carte représentant les
 
 Je voudrais avoir un fond de carte pour mieux représenter les altitudes de
 Paris, à l’échelle d’un cycliste. Les fonds de cartes à l’échelle de France
-avec des altitudes allant jusqu’à presque 5000 mètres ne nous intéresse pas.
+avec des altitudes allant jusqu’à presque 5000 mètres ne nous intéressent pas.
 
-On voudrait éxagérer le relief entre 30 et 130 mètres pour pouvoir se rendre compte
+On voudrait exagérer le relief entre 30 et 130 mètres pour pouvoir se rendre compte
 d’un faux plat tel que sur la rue de la République.
 
 # Source de données
@@ -91,7 +91,7 @@ boucles, la Marne et d’autres affluents :
 
 ### Des couleurs !
 
-On va modifier le style de la couche pour en faire quelque chose de plus sympatique.
+On va modifier le style de la couche pour en faire quelque chose de plus sympathique.
 
 En choississant un type de rendu `Singleband pseudocolor`, puis en choississant
 le color map `Reds` suivi d’un clic sur `Classify` on obtient une proposition
@@ -117,7 +117,7 @@ Le résultat est finalement plus proche de ce qu’on imagine :
 
 ## Combinons les deux
 
-Nous choissions la fusion des deux couches (_blending_) avec le mode
+Nous choisissons la fusion des deux couches (_blending_) avec le mode
 _multiply_ pour obtenir l’image suivante :
 
 ![Ombres et couleurs](../images/elevations/paris_combiné.webp)
@@ -144,7 +144,7 @@ rendu suivant :
 
 Pour une utilisation ultérieure, nous convertissons les fichiers
 _shapefile_ en _GeoJSON_ dont les coordonnées seront en `(lon ; lat)`
-(dont l’identitifant est 4326) et
+(dont l’identifiant est 4326) et
 non plus dans la projection originale des données altimétriques :
 
 ```sh

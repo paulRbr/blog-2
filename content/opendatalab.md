@@ -52,7 +52,7 @@ C’est bien évidemment parfaitement inutile. C’est avec une très grande
 minutie que je ne répondais à aucun critère de la grille d’évaluation
 
 -   apporter un plus aux voyageurs
--   mashup de plusieurs source de donnése
+-   mashup de plusieurs source de données
 -   être viable
 
 ## Choix des données
@@ -78,7 +78,7 @@ taille du fichier obtenu.
 Un produit en croix et j’arrive à faire correspondre les pixels RATP et
 les coordonnées des stations sur les pixels de mon image.
 
-Ainsi je sais que la station Gambeta est aux coordonnées 1500×800 du
+Ainsi je sais que la station Gambetta est aux coordonnées 1500×800 du
 plan OSM, mais si on utilisait le plan schématique, elle serait en
 1600×850.
 
@@ -120,7 +120,7 @@ de l’OpenData sans coder.
 J’espère juste l’ouverture de ces données ira un peu plus loin d’un
 évènement ponctuel. La valeur de ces données mérite beaucoup plus qu’une
 simple application. Il faut impliquer la recherche à plus long terme, il
-faudrait réussir à enfin créer un éco-systèmes d’entreprises qui
+faudrait réussir à enfin créer un écosystèmes d’entreprises qui
 s’entraideraient et créons des projets artistiques : la RATP c’est le
 quotidien de millions de personnes, elle nous amène à notre rendez-vous
 galant, elles nous met hors de nous quand ça se grippe, elle transforme

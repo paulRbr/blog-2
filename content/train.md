@@ -8,7 +8,7 @@ title = "C’est quoi un train ?"
 Normalement vous levez un sourcil et vous vous demandez dans quel troll
 je vous embarque.
 
-La response n'est pas si triviale qu'elle en a l'air. Petit exposé des
+La réponse n'est pas si triviale qu'elle en a l'air. Petit exposé des
 différentes façons de voir un train à partir de mon expérience chez
 [Canal TP](http://www.canaltp.fr) et [Capitaine Train](https://www.capitainetrain.com).
 
