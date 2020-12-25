@@ -2,6 +2,7 @@
 category = "vert"
 date = 2013-08-12
 title = "Hyperloop, un mode pas si révolutionnaire que ça"
+slug = "hyperloop-un-mode-pas-si-revolutionnaire-que-ca"
 +++
 
 Après plusieurs semaines de teasing, on en sait un peu plus sur le

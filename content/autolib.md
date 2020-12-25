@@ -5,8 +5,7 @@ title = "Autolib’ ou « autopartage et gaspillage de l’espace urbain »"
 +++
 
 L’autolib’ va être mis en route début octobre. En soit l’auto-partage
-n’est pas une nouveauté et existe dans toutes les [grandes
-villes](http://www.franceautopartage.com/FAP/FAPsocietaires.htm) de
+n’est pas une nouveauté et existe dans toutes les [grandes villes](http://www.franceautopartage.com/FAP/FAPsocietaires.htm) de
 France.
 
 Mais tout comme le Vélib’ a éclipsé le Vélo’v lyonnais, je parie que
