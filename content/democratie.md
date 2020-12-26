@@ -2,7 +2,6 @@
 date = 2016-07-29
 title = "Anarchy in the IT"
 category = "rouge-noir"
-slug = "anarchy-in-the-it"
 +++
 
 ### En fin de compte, plus de rouge que de noir

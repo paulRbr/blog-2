@@ -2,7 +2,6 @@
 category = "vert"
 date = 2013-08-12
 title = "Hyperloop, un mode pas si révolutionnaire que ça"
-slug = "hyperloop-un-mode-pas-si-revolutionnaire-que-ca"
 +++
 
 {% update(date="2020-12-26") %}

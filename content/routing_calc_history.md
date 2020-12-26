@@ -2,7 +2,6 @@
 category = "tech"
 date = 2013-09-21
 title = "Short history of routes computation"
-slug = "short-history-of-routes-computation"
 +++
 
 # Introduction
