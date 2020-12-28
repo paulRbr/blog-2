@@ -11,7 +11,7 @@ success I mean that people actually read it). At least two people asked
 for an English translation. So here it goes, with some of the errors in
 the French version corrected.
 
-Formally we would speak of "shortest path in a graph problem". The goal
+Formally we would speak of “shortest path in a graph problem”. The goal
 is the same: what is the shortest way to go from A to B.
 
 Route computation are nice as the actual use cases can be explained to
@@ -60,7 +60,7 @@ We had to wait 28 years to get to it.
 The weakness of Dijkstra’s algorithm is its priority queue that returns
 what node to visit next. An [article from 1987](http://www.cs.princeton.edu/courses/archive/fall03/cs528/handouts/fibonacci%20heaps.pdf)
 by Tarjan (an other reference in the world of graphs) brings us to the
-"modern" Dijkstra’s algorithm.
+“modern” Dijkstra’s algorithm.
 
 Many variations have been tested to speed up the algorithm with
 mitigated success, such as A*, bi-directional searches, sacrificing the
