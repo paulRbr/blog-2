@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>The Life and Opinions of Tristram Gräbener, Developper</title>
   <link rel="stylesheet" href="{{get_url(path="style.css")}}">
 </head>
 
 <body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
   <div class="container">
-    <header>
-      <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
-    </header>
     {% block content %} {% endblock %}
   </div>
 </body>

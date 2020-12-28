@@ -11,6 +11,7 @@ $theme-color-Dark-Violet: #9932CC;
 $text-colour: #34495e;
 $main-colour: #c05b4d;
 $secondary-colour: #f8f5ec;
+$background-color: #fefefe;
 $body-width: 750px;
 $code-colour: #c7254e;
 $code-font-family: monospace !default;
@@ -53,8 +54,8 @@ $decoration-font-family: sans-serif;
 body {
     line-height: 1.5;
     color: $text-colour;
-    background: #fefefe;
-    border-top: 3px solid $main-colour;
+    background: $background-color;
+    padding-top: 60px;
 }
 
 .container {
@@ -64,10 +65,16 @@ body {
 }
 
 header {
+    border-top: 3px solid $main-colour;
     margin-bottom: 4em;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $background-color;
+    text-align: center;
     h1 {
         @include underline-from-center;
+
     }
 
     a, a:visited {
