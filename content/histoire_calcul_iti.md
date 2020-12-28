@@ -55,7 +55,7 @@ remonte le prochain nœud du réseau à visiter. La publication par Tarjan
 nous amène à la version « moderne » de l’algorithme de Dijkstra.
 
 Différentes variantes ont été testées pour accélérer l’algorithme avec
-des succès moyens, comme le A\*, les recherches bi-directionnelles, des
+des succès moyens, comme le A*, les recherches bi-directionnelles, des
 sacrifices à l’optimum, ou encore une combinaison de tout ça.
 
 Sur un ordinateur récent, calculer un itinéraire en France prend environ

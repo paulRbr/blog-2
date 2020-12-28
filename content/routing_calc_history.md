@@ -63,7 +63,7 @@ by Tarjan (an other reference in the world of graphs) brings us to the
 "modern" Dijkstra’s algorithm.
 
 Many variations have been tested to speed up the algorithm with
-mitigated success, such as A\*, bi-directional searches, sacrificing the
+mitigated success, such as A*, bi-directional searches, sacrificing the
 optimality or a combination of all that.
 
 On a recent computer, computing a route across France takes around a
