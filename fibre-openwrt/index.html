@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Life and Opinions of Tristram Gräbener, Developper</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tristramg.eu&#x2F;style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
+  <div class="container">
+    
+<h2>Fibre free sans freebox</h2>
+<p class="subtitle">2014-04-20</p>
+<article>
+<h1 id="version-courte">Version courte</h1>
+<p>La fibre avec Freebox v5 est limitée à 30 Mbps (mais au moins c’est
+symétrique).</p>
+<p>Cette limitation disparait avec la Freebox Révolution qui coute 70€/an.</p>
+<p>En se branchant en ethernet, on peut dépasser les 500 Mbps.</p>
+<p>On peut aussi utiliser un routeur wifi du commerce à moins de 50€ pour
+avoir 200 Mbps. C’est ce que j’explique ici.</p>
+<h1 id="contexte">Contexte</h1>
+<p>Ma première connexion internet, c’était du 28.8 kbps en 1997 à
+Madagascar. Notre FAI avait à l’époque une connexion internationale de
+2 Mbps.</p>
+<p>Je suis chez Free depuis 2005, avec une connexion 2 Mbps initialement.</p>
+<p>En arrivant à Paris, j’avais une pauvre connexion 16 Mbps et seulement
+0.8 en upload. Mais mon immeuble était fibré par Neuf et les personnes
+qui avaient SFR ou Orange avaient la fibre.</p>
+<p>Tous les gros coups de pieds dans la fourmilière et le dirigeant qui est
+devenu milliardaire en trollant, m’ont fait refuser d’aller voir le
+autres concurrents, même pendant les quelques mois où youtube était
+devenu inutilisable.</p>
+<p>Quand aux FAI associatifs, je soutiens l’idée, mais ma radinerie et mon
+manque d’engagement militant ne m’ont jamais fait passer le cap. Après
+tout <a href="http://www.lanef.com/">ma banque</a> et <a href="http://www.enercoop.fr">ma compagnie
+d’électricité</a> sont des coopératives. Pourquoi
+pas mon internet ?</p>
+<p>En décembre, j’ai reçu un coup de fil de Free pour poser la fibre. Après
+un no-show du technicien SFR (apparemment la fibre n’est pas posée par
+le FAI dans l’appartement, mais par l’entreprise qui a initialement
+fibré l’immeuble), un rendez-vous décalé par moi, la pose de la fibre,
+l’intervention du technicien Free pour finir le travail fait à moitié
+par le prestataire de SFR, j’ai la Fibre!</p>
+<h1 id="concours-de-chibre">Concours de chibre</h1>
+<p>La Freebox v5 n’a pas de prise fibre. Free nous fournit donc un petit
+boitier qui prend la fibre d’un côté et expose une prise ethernet de
+l’autre côté. On peut brancher la freebox dessus et tout fonctionnera
+comme avant. Mais on sera limité à 30 Mbps symétrique. Je suppose
+qu’aussi bien le matériel que le logiciel ont été dimensionné pour les
+20 Mbps de l’ADSL.</p>
+<p>On peut aussi se demander pourquoi ne pas brancher le PC sur le port
+ethernet du convertisseur. On peut. Mais il y a une subtilité à
+expliquer : en sortie de fibre, il y a deux réseaux, un pour internet,
+un pour la télévision à rediriger sur le boitier HD. Les flux sont
+taggués respectivement avec les vlans 836 et 835. Pour accéder
+uniquement au flux internet, installez le paquet vlan de votre
+distribution préférée, puis</p>
+<pre><code>vconfig add eth0 836
+dhclient eth0.836 # ou ce que vous utilisez pour le dhcp
+</code></pre>
+<p>Ça y est ! Vous avez la plus grosse connexion. Selon les sites de tests,
+le débit était entre 500 et 800 Mbps et mon disque dur est trop lent
+pour tester si effectivement sur un gros téléchargement je plafonne à
+50 Mo/s.</p>
+<p>C’est bien, mais j’aimerais autant avoir le wifi. J’ai donc acheté un
+petit <a href="http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd">routeur wifi</a>.</p>
+<h1 id="openwrt">OpenWRT</h1>
+<p>OpenWRT est un firmware qui permet de libérer vos petits routeurs wifi
+et donc avoir bien plus la main dessus. Ça permet aussi des trucs
+rigolos comme les <a href="http://pirateboxfr.com/bienvenue/">Piratebox</a>. Je ne
+vais pas vous expliquer le flashage et comment faire une installation de
+base. Internet est assez riche.</p>
+<p>Par contre, j’ai vraiment galéré à configurer, pourtant c’est très
+simple. Dans <code>/etc/config/network</code>, sur le vlan correspondant au port
+WAN (probablement vlan 2), précisez que vous voulez recevoir que les
+paquets avec le tag 836. Deux lignes à modifier, une à ajouter.</p>
+<p>Avant :</p>
+<pre><code>config interface ’wan’
+    option ifname ’eth0’
+    option proto ’dhcp’
+[…]
+config switch_vlan
+    option device ’switch0’
+    option vlan ’2’
+    option ports ’5 6’
+</code></pre>
+<p>Après :</p>
+<pre><code>config interface ’wan’
+    option ifname ’eth0.836’
+    option proto ’dhcp’
+[…]
+config switch_vlan
+    option device ’switch0’
+    option vlan ’2’
+    option vid ’836’
+    option ports ’5t 6t’
+</code></pre>
+<p>Note : de ce que j’ai vu sur la documentation d’autres modèles, les
+ports seront probablement 0 et 1 et non pas 5 et 6 comme chez moi.</p>
+<p>Ça y est ! J’ai un peu plus de 200 Megas en symétrique, soit 10 000 fois
+plus que ma première connexion internet. Ce chiffres correspondent à une
+<a href="http://wiki.openwrt.org/doc/hardware/performance">limite du routeur</a>.</p>
+<p>Ça sera bien assez, hein ;)</p>
+<h1 id="consommation">Consommation</h1>
+<p>Un bon point annexe, c’est la consommation d’électricité. Comme toutes
+les boxes, la freebox consomme trop. Mesuré avec un wattmètre bon
+marché, la freebox consomme 13W auxquels il faut ajouter les 3W du
+convertisseur, soit 16W.</p>
+<p>Avec le routeur et le convertisseur je suis à 10 W. Alors, évidemment,
+le gain de 6W doublé de l’imprécision du wattmètre ça reste pas très
+fiable.</p>
+<p>Vu que j’ai internet allumé environ 10 heures par jour en moyenne
+(beaucoup moins en semaine, beaucoup plus le week-end), ça fait 20 kWh
+d’économisés par an, soit
+<a href="http://www.enercoop.fr/Tarifs_484.html">3 €</a> ! Whoo ! Mais pour une
+consommation annuelle de 800 kWh, c’est pas si négligeable.</p>
+<h1 id="bilan">Bilan</h1>
+<p>Pfiou, ça fait longtemps que j’avais pas geeké à si bas niveau pour
+rien, les 30 Mbps auraient été bien suffisants ;)</p>
+
+</article>
+
+  </div>
+</body>
+
+</html>

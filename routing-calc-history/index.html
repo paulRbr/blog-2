@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Life and Opinions of Tristram Gräbener, Developper</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tristramg.eu&#x2F;style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
+  <div class="container">
+    
+<h2>Short history of routes computation</h2>
+<p class="subtitle">2013-09-21</p>
+<article>
+<h1 id="introduction">Introduction</h1>
+<p>I wrote a blog post in French that had some unexpected success (by
+success I mean that people actually read it). At least two people asked
+for an English translation. So here it goes, with some of the errors in
+the French version corrected.</p>
+<p>Formally we would speak of “shortest path in a graph problem”. The goal
+is the same: what is the shortest way to go from A to B.</p>
+<p>Route computation are nice as the actual use cases can be explained to
+anyone =</p>
+<ul>
+<li>the GPS end user</li>
+<li>the computer science student that at some point learnt the basic
+algorithms</li>
+<li>there is still research going on, but it can be explained to anyone
+interested within a few pints</li>
+</ul>
+<p>Personally, what I find interesting is how those algorithms evolved
+through time. Sorry for punctual technical details.</p>
+<h1 id="1956-1958-ford-moore-and-bellman">1956 — 1958: Ford, Moore and Bellman</h1>
+<p>The first suggested algorithm was published independently by those
+authors.</p>
+<p>It is nowadays usually called the <em>Bellman-Ford</em> algorithm.</p>
+<h1 id="1959-dijkstra">1959: Dijkstra</h1>
+<p><a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Edgard Dijkstra</a> is
+Dutch.</p>
+<p>He is one of the big names in computer science. He is know for his
+handwriting and quotes such as:</p>
+<ul>
+<li><code>Simplicity is prerequisite for reliability</code></li>
+<li><code>The question of whether Machines Can Think… is about as relevant as the question of whether Submarines Can Swim</code></li>
+<li><code>Object-oriented programming is an exceptionally bad idea which could only have originated in California</code></li>
+</ul>
+<p>He is the author of — brace yourself — <em>Dijkstra’s algorithm</em>
+published in 1959. It has been described in a <a href="http://www-m3.ma.tum.de/foswiki/pub/MN0506/WebHome/dijkstra.pdf">two pages only article</a>
+but the name stuck as the fundamental brick of route computations.</p>
+<p>However, the algorithm we learn at school is not the one published by
+Dijkstra. It has a complexity of O(n²) while we are taught that
+complexity of the algorithm is O(n·log(n)).</p>
+<p>We had to wait 28 years to get to it.</p>
+<h1 id="1987-tarjan">1987: Tarjan</h1>
+<p>The weakness of Dijkstra’s algorithm is its priority queue that returns
+what node to visit next. An <a href="http://www.cs.princeton.edu/courses/archive/fall03/cs528/handouts/fibonacci%20heaps.pdf">article from 1987</a>
+by Tarjan (an other reference in the world of graphs) brings us to the
+“modern” Dijkstra’s algorithm.</p>
+<p>Many variations have been tested to speed up the algorithm with
+mitigated success, such as A*, bi-directional searches, sacrificing the
+optimality or a combination of all that.</p>
+<p>On a recent computer, computing a route across France takes around a
+second. Therefor back in the 90’s it was way to slow. There was a need
+to speed up the computation.</p>
+<p>We had to wait 18 year to get to it.</p>
+<h1 id="2005-dimacs-challenge-and-rise-of-the-kit">2005: Dimacs challenge and rise of the KIT</h1>
+<p>The <a href="http://www.dis.uniroma1.it/challenge9/format.shtml">9th Dimac Challenge</a> was about
+routes computation. For this event the <a href="http://www.dis.uniroma1.it/challenge9/download.shtml">road network of the United States</a> was
+published.</p>
+<p>A large number of publications pulverised all the records. The
+algorithms are now fast enough to compute a route between two points on
+earth in less than a millisecond (more than a <em>thousands</em> times faster
+than the Dijkstra’s algorithm).</p>
+<p>An overwhelming share of publications come from from the <a href="http://i11www.iti.uni-karlsruhe.de/en/projects/route_planning/index">Karlsruhe Institute of Technology</a>.</p>
+<p>The team members suggested many algorithms, but also tested nearly every
+possible combination between those algorithms.</p>
+<p>There were so many publications it was hard to know where to look.</p>
+<h1 id="2008-consolidation-with-the-contraction-hierarchies">2008: consolidation with the Contraction Hierarchies</h1>
+<p>After this phase of exuberant creativity, we could extract the core
+substance to make the algorithm that will probably become the new
+reference = the <em>contraction hierarchies</em>.</p>
+<p>It has been presented in a master thesis (so I am somewhat ashamed of my
+PhD thesis…) by
+<a href="http://algo2.iti.kit.edu/documents/routeplanning/geisberger_dipl.pdf">Geisberger</a>.</p>
+<p>There is nothing really new, only the removal of superfluous ideas that
+made other algorithms too complicated to keep the smallest core that
+works well.</p>
+<p>Everybody that is interested in algorithmic should read the algorithm
+and its demonstration of optimality. The first time I read it, I could
+not grasp how it worked. I had to walk through the demonstration to be
+convinced.</p>
+<p>That algorithm is used in <a href="http://map.project-osrm.org/">OSRM</a>, a free
+route calculator based on <a href="http://www.openstreetmap.org">OpenStreetMap</a>
+data.</p>
+<h1 id="2009-public-transit-are-still-forgotten">2009: public transit are still forgotten</h1>
+<p>At last we know to efficiently compute a route on a street network. What
+about public transit? Not so bright here.</p>
+<p>The question was already studied in 1991 in the great PhD thesis of
+Eduard Tulp. But little happened since.</p>
+<p>Performances are deceiving and trying to use the successes in street
+network failed.</p>
+<p>In the article <a href="http://link.springer.com/chapter/10.1007/978-3-642-03456-5_24">Car or Public Transport—Two
+Worlds</a>
+H. Bast show the differences that exist between both means of
+transportation and that is not interesting to try to use the same
+techniques.</p>
+<h1 id="2010-transfer-patterns-performance-at-last">2010: transfer patterns, performance, at last!</h1>
+<p>It was summer, I had just sent my thesis manuscript to the examiners.
+Because of over-zealousness I read the <a href="http://ad.informatik.uni-freiburg.de/files/transferpatterns.pdf">latest article from H. Bast</a>.</p>
+<p>For the first time it was possible to compute routes using public
+transit within a few milliseconds in a large city as New-York.</p>
+<p>If you looked closely, the was still a slight twist: the authors used
+the computing power of thousands of computers from Google. A massive
+pre-processing is the key to such good results.</p>
+<p>Just two more years to wait to have an effective algorithm.</p>
+<h1 id="2012-delling-s-raptor">2012: Delling’s Raptor</h1>
+<p>Daniel Delling likes cool names (a previous algorithm was called
+<em>Sharc</em>). He chose
+<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=156567">Raptor</a>
+for his new algorithm.</p>
+<p>The proposed approach has no need for pre-processing and has better
+performances than the transfer patterns.</p>
+<p>Hooray! Cars do not have the monopoly on efficient algorithm any more.
+Raptor has the advantage to be rather simple and to have nice properties
+(too technical to bother you with them).</p>
+<p><img src="../images/zoidberg_hooray.webp" alt="Zoidberg from Futurama saying hooray" /></p>
+<h1 id="intermission-opendata-and-science">Intermission: opendata and science</h1>
+<p>Science needs data to be easily available. The DIMACS challenge was a
+success because big real life data set were published.</p>
+<p>It took six years from the first high-performance street network routing
+algorithm to the first high performance algorithm on public transit. We
+had to wait so long until data sets were at last released.</p>
+<p>It is the opendata movement applied to transportation that allowed that
+scientific progress.</p>
+<h1 id="2013-connection-scan-algorithm">2013: Connection Scan Algorithm</h1>
+<p>A last one! In an article very modestly called <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-38527-8_6">Intriguingly Simple and Fast Transit Routing</a>
+the authors present the <em>connection scan algorithm</em>. It is slightly more
+efficient than Raptor but is considerably more simple.</p>
+<p>When reading the article, and once again when implementing it, I was
+struck how brain dead simple it is, but it works.</p>
+<p>We went through 57 years of research to end up with an algorithm that
+could have been written at the same time as Dijkstra’s.</p>
+<p>Hence a last quote of Dijkstra that seems very appropriate:</p>
+<blockquote>
+<p>Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better</p>
+</blockquote>
+
+</article>
+
+  </div>
+</body>
+
+</html>

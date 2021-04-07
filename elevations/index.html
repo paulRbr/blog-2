@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Life and Opinions of Tristram Gräbener, Developper</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tristramg.eu&#x2F;style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
+  <div class="container">
+    
+<h2>Altitudes</h2>
+<p class="subtitle">2016-09-06</p>
+<article>
+<p>Vouloir représenter des altitudes sur une carte est plutôt courant.</p>
+<p>J’explique ici comment créer de toutes pièces une carte représentant les
+élévations.</p>
+<p>Je voudrais avoir un fond de carte pour mieux représenter les altitudes de
+Paris, à l’échelle d’un cycliste. Les fonds de cartes à l’échelle de France
+avec des altitudes allant jusqu’à presque 5000 mètres ne nous intéressent pas.</p>
+<p>On voudrait exagérer le relief entre 30 et 130 mètres pour pouvoir se rendre compte
+d’un faux plat tel que sur la rue de la République.</p>
+<h1 id="source-de-donnees">Source de données</h1>
+<p>Les altitudes sont généralement obtenues par des satellites ou pour des mesures plus
+précises par avion.</p>
+<p>Il existe des bases mondiales telles que l’américaine <a href="https://fr.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission">STRM</a> ou la japonaise
+<a href="https://en.wikipedia.org/wiki/Advanced_Spaceborne_Thermal_Emission_and_Reflection_Radiometer#ASTER_Global_Digital_Elevation_Model">ASTER</a>.
+Ces deux bases donnent l’altitude d’un point environ tous les 30 mètres.</p>
+<p>En France, l’IGN a met à disposition des données ouvertes dans la base
+<a href="http://professionnels.ign.fr/bdalti">BD ALTI</a>. La précision est d’un
+point tous les 75m. Elle n’a donc strictement aucun intérêt par rapport aux
+bases mondiales. Il existe aussi la <a href="http://professionnels.ign.fr/rgealti">RGE ALTI</a> de l’IGN avec une précision
+remarquable de 5 mètres, mais je n’ai jamais eu l’occasion de l’essayer
+tellement les prix sont prohibitifs.</p>
+<p>L’Europe fournit les données avec un pas de 25m en se basant sur les données
+STRM et ASTER. Elles sont librement téléchargeable sur le site de
+<a href="http://www.eea.europa.eu/data-and-maps/data/eu-dem">EU-DEM</a>. Ce sont
+ces données qui vont être utilisées.</p>
+<h1 id="recuperer-le-bon-fichier">Récupérer le bon fichier</h1>
+<p>Nous voulons un rectangle autour de Paris. Le coin nord-ouest est aux
+coordonnées <code>(lon ; lat)</code> <code>(2,1 ; 49,0)</code> et coin sud-est <code>(2,6 ; 48,7)</code>.</p>
+<p>Les données de EU-DEM sont dans le système de projection <a href="https://en.wikipedia.org/wiki/European_grid">EPSG:3035</a>. Une unité dans
+cette projection correspond à un mètre. Chaque fichier représente un
+carré de 1000km de côté, dont le centre est indiqué dans le nom du fichier.</p>
+<p>Pour convertir mes coordonnées sphériques vers cette projection, j’utilise <a href="http://www.gdal.org/">GDAL</a> :</p>
+<pre><code>echo -e &quot;2.1 49.0 \n 2.6 48.7&quot; | gdaltransform -s_srs EPSG:4326 -t_SRS EPSG:3035
+
+3744051.46720138 2907303.46758626 0
+3777142.88025981 2870291.83692777 0
+</code></pre>
+<p>On en déduit qu’il faut le fichier <code>EUD_CP-DEMS_3500025000-AA.tif</code>.</p>
+<p>La commande <code>gdalinfo EUD_CP-DEMS_3500025000-AA.tifgdalinfo EUD_CP-DEMS_3500025000-AA.tif</code> permet d’avoir plus d’informations.</p>
+<p>D’une part on y découvre que le fichier contient le système de projection
+utilisé et qu’il s’agit d’une image carrée de 4000×4000 pixels, et que
+chaque pixel représente 25 mètres.</p>
+<p>Au lieu de représenter une couleur, un pixel représente une altitude.</p>
+<p>Pour éviter de manipuler un fichier de 4Go, et donc de risque de se
+retrouver un peu à l’étroit en mémoire vive, nous découpons le fichier
+autour des coordonnées qui nous intéressent :</p>
+<p><code>gdalwarp -te 3744051 2870291 3777142 2907303 EUD_CP-DEMS_3500025000-AA.tif paris.tif</code></p>
+<h1 id="mapzen-terrain-tiles">Mapzen terrain tiles</h1>
+<p>Il existe également une méthode bien plus simple pour récupérer le <code>tif</code> sur la
+zone que vous voulez.</p>
+<p>Il suffit d’utiliser le service proposé par Mapzen : https://mapzen.com/documentation/terrain-tiles/build-a-map/#desktop.</p>
+<p>Merci à Thomas Gratier de me l’avoir signalé.</p>
+<h1 id="jouons-avec-qgis">Jouons avec QGIS</h1>
+<p>QGis est très à l’aise avec ce type de fichiers. Importons-le dans un
+projet vierge comme <a href="http://hub.qgis.org/projects/quantum-gis/wiki/Opening_raster_files">couche raster</a>.</p>
+<p>On obtient une image en niveau de gris, et on reconnait la Seine et ses
+boucles, la Marne et d’autres affluents :</p>
+<p><img src="../images/elevations/paris_brut.webp" alt="Paris brut" /></p>
+<h3 id="des-couleurs">Des couleurs !</h3>
+<p>On va modifier le style de la couche pour en faire quelque chose de plus sympathique.</p>
+<p>En choississant un type de rendu <code>Singleband pseudocolor</code>, puis en choississant
+le color map <code>Reds</code> suivi d’un clic sur <code>Classify</code> on obtient une proposition
+pour un gradient de rouges pour représenter environ 100 m d’écart.</p>
+<p>Le résultat est un peu décevant :</p>
+<p><img src="../images/elevations/paris_rouges.webp" alt="niveaux en rouge" /></p>
+<h2 id="des-ombres">Des ombres</h2>
+<p>Ce qu’il nous manque, c’est des <em>hillshade</em> ou des ombres pour souligner le
+relief. Ici intervient à nouveau <code>gdal</code> avec son outil <code>gdaldem</code> :</p>
+<p><code>gdaldem hillshade paris.tif paris_ombres.tif</code>.</p>
+<p>Il est également possible d’utiliser <code>gdaldem</code> directement depuis QGis
+au travers du menu <code>Raster&gt;Analysis&gt;DEM (Terrain Models)</code>.</p>
+<p>Le résultat est finalement plus proche de ce qu’on imagine :</p>
+<p><img src="../images/elevations/paris_ombres.webp" alt="Ombres du relief" /></p>
+<h2 id="combinons-les-deux">Combinons les deux</h2>
+<p>Nous choisissons la fusion des deux couches (<em>blending</em>) avec le mode
+<em>multiply</em> pour obtenir l’image suivante :</p>
+<p><img src="../images/elevations/paris_combin%C3%A9.webp" alt="Ombres et couleurs" /></p>
+<h2 id="courbes-de-niveau">Courbes de niveau</h2>
+<p>Les courbes de niveau parlent particulièrement à certains habitués des
+cartes. Nous générons une courbe tous les 10 mètres avec :</p>
+<pre><code>gdal_contour -a altitude -i 10.0 paris.tif iso10.shp
+</code></pre>
+<p>ou au travers du menu <code>Raster&gt;Extraction&gt;Contour</code>.</p>
+<p>Le résultat n’est plus un fichier <em>raster</em>, mais un fichier vectoriel au
+formate <em>shapefile</em>.</p>
+<p>En répétant l’opération pour obtenir les courbes tous les 50 mètres,
+puis en jouant avec les styles dans QGis, il est possible d’obtenir le
+rendu suivant :</p>
+<p><img src="../images/elevations/paris_iso.webp" alt="Courbes de niveau" /></p>
+<p>Pour une utilisation ultérieure, nous convertissons les fichiers
+<em>shapefile</em> en <em>GeoJSON</em> dont les coordonnées seront en <code>(lon ; lat)</code>
+(dont l’identifiant est 4326) et
+non plus dans la projection originale des données altimétriques :</p>
+<pre><code> ogr2ogr -t_srs EPSG:4326 -f geojson iso10.geojson iso10.shp
+</code></pre>
+<h2 id="utilisation-web">Utilisation web</h2>
+<p>Si le but était de créer une carte papier, le composeur de QGis serait
+tout à fait indiqué.</p>
+<p>Cependant, si on désire faire une carte interactive pour le web, il faut
+transformer les images en tuiles, ici en utilisant <code>gdal2tiles</code> afin d’avoir
+des images de taille différente selon le niveau de zoom.</p>
+<pre><code>gdal2tiles.py --zoom=9-14 --s_srs EPSG:3035 paris_tout.tif
+</code></pre>
+<p>Ensuite utilisez votre outil carto préféré.</p>
+
+</article>
+
+  </div>
+</body>
+
+</html>

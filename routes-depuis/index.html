@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Life and Opinions of Tristram Gräbener, Developper</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tristramg.eu&#x2F;style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
+  <div class="container">
+    
+<h2>Toutes les routes depuis…</h2>
+<p class="subtitle">2016-12-06</p>
+<article>
+<p>Il y a quasiment un an, j’avais copié le projet
+<a href="http://roadstorome.moovellab.com/">Roads to Rome</a> et décrit sur
+<a href="https://tristramg.eu/roads-from-notre/">ici-même</a> le processus.</p>
+<p>Celui-ci était particulièrement pénible et pas vraiment réutilisable.</p>
+<p>Il était temps de faciliter la génération des données et de permettre à tout le monde
+de faire ses propres cartes.</p>
+<p>Quelques exemples de cartes sont visibles <a href="https://cloud.tristramg.eu/index.php/s/nKTxqGmDXBNfSs2">par ici</a>.</p>
+<p><img src="../images/routes_depuis/africa.webp" alt="Routes depuis Niamey, Niger" /></p>
+<h2 id="osm4routing-en-rust">osm4routing en rust</h2>
+<p>Il s’agit d’un projet <a href="https://github.com/Tristramg/osm4routing/commit/cb0da48b02258ebb26a88a382761ff53d55412cf">très vieux</a>
+dont l’ambition est de permettre d’avoir un graphe dans un format très simple pour faire
+du calcul d’itinéraire tel qu’il est enseigné en théorie des graphes à partir de
+données réelle issues de <a href="https://www.openstreetmap.org">OpenStreetMap</a>.</p>
+<p>L’ambition est clairement pédagogique, puisque un calcul d’itinéraire réel nécessite
+beaucoup plus d’informations comme par exemple un modèle plus fin de la vitesse sur chaque tronçon,
+les feux ou encore les interdictions de tourner.</p>
+<p>Alors qu’il s’agissait initialement que d’un outil pour ma thèse, plusieurs personnes
+semblaient s’en servir malgré les nombreuses limitations.</p>
+<p>Parmi les limitations notables de ce projet :</p>
+<ul>
+<li>L’installation difficile étant écrit en C++ et python ;</li>
+<li>OpenStreetMap est passé à format de données bien <a href="https://wiki.openstreetmap.org/wiki/PBF_Format">plus performant</a> ;</li>
+<li>Pas de tests et des petits bugs agaçants pourtant faciles à tester ;</li>
+<li>N’est pas utilisable comme bibliothèque.</li>
+</ul>
+<p>Pour toutes ces raisons, et aussi pour avoir un prétexte d’écrire en <a href="https://www.rust-lang.org/">Rust</a>,
+j’ai écrit une <a href="https://github.com/Tristramg/osm4routing2">nouvelle version</a> corrigeant ces défauts.</p>
+<p><img src="../images/routes_depuis/south_america.webp" alt="Routes depuis Cayo, Équateur" /></p>
+<h2 id="roads-from-notre-dame">Roads from Notre-Dame</h2>
+<p>Une fois <em>osm4routing</em> réécrit, j’ai pu réécrire le projet en le simplifiant considérablement :</p>
+<ul>
+<li>Un seul exécutable qui fait tout ;</li>
+<li>Plus de phase d’extraction du réseau routier ;</li>
+<li>Pas de dépendance à Postgresql et PostGIS ;</li>
+<li>Algorithme de Dijkstra au lieu de Bellman-Ford ;</li>
+<li>Pas de valeurs écrites en dur.</li>
+</ul>
+<p>Si vous souhaitez créer votre propre carte, voici les étapes :</p>
+<ul>
+<li>Installez Rust : https://www.rust-lang.org/en-US/downloads.html ;</li>
+<li><code>cargo install roads-from-nd</code> ;</li>
+<li>Trouvez l’<a href="https://www.openstreetmap.org/node/677151951">identifiant OpenStreetMap d’une intersection</a> qui sera le point de départ ;</li>
+<li>Téléchargez la base OpenStreetMap de la zone qui vous intéresse à partir de http://download.geofabrik.de/. Comptez au moins autant de mémoire vive que la taille du fichier ;</li>
+<li><code>roads-from-nd fichier.osm.pbf id_nœud_de_départ résultat.pdf</code>.</li>
+</ul>
+<p>Si vous diffusez l’image générée, n’oubliez pas d’attribuer le droit d’auteur
+aux <a href="https://www.openstreetmap.org/copyright">contributeurs OpenStreetMap</a>.</p>
+<p><img src="../images/routes_depuis/japan.webp" alt="Routes depuis Tokyo, Japon" /></p>
+
+</article>
+
+  </div>
+</body>
+
+</html>

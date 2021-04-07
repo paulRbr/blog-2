@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Life and Opinions of Tristram Gräbener, Developper</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tristramg.eu&#x2F;style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
+  <div class="container">
+    
+<h2>Roads from Notre-Dame</h2>
+<p class="subtitle">2015-12-27</p>
+<article>
+<blockquote class="update">
+    <h3>Mise à jour le 2020-12-26</h3>
+    I rewrote everything in rust for much more simplicity and explained it <a href="../routes-depuis">a blog post in french</a>.</p>
+<p>Examples can be seen <a href="https://cloud.tristramg.eu/index.php/s/nKTxqGmDXBNfSs2">over here</a>, and the code <a href="https://github.com/Tristramg/roads-from-nd/">on github</a>.
+</blockquote>
+<p>All roads lead to Rome and it makes great maps! The project <a href="http://roadstorome.moovellab.com/">Roads to Rome</a> made a small buzz with their
+gorgeous maps showing a superposition of many routes that lead to Rome.</p>
+<p>They well deserve their success. The representation looks like a human
+cardiovascular system, whose heart is Rome.</p>
+<p>I was somewhat jealous for not having that idea first. Nor did I have
+the aesthetic talent to make a beautiful representation, so I was
+slightly condescending: “Meh. It’s only 20 lines of code for a Dijkstra
+and some plotting”.</p>
+<p>Having some free time in Perpignan with my family for a week, I tried to
+copy their work. Here is a journal of what I did.</p>
+<p>Since my laptop is a 4 years old netbook and due to my laziness to
+optimise my code, the example will only cover France and not Europe on
+the whole.</p>
+<p><a href="../images/roads_from_nd_xxl.webp"><img src="../images/roads_from_nd_small.webp" alt="Final result. Click for a higher resolution (144 Megapixels, 16Mb)" /></a></p>
+<p>Data from OpenStreetMap under ODbL</p>
+<h1 id="1-get-the-data">1. Get the data</h1>
+<p>Of course I used <a href="https://www.openstreetmap.org">OpenStreetMap</a>.
+However, processing all the data of France was too much for my modest
+project <a href="https://github.com/Tristramg/osm4routing">osm4routing</a>. I used
+the extraction part from <a href="http://project-osrm.org/">OSRM</a>.</p>
+<p>I read the binary representation in the <code>.osrm</code> files. This
+is not portable at all as the format is a temporary file format.
+Actually, my code does not work anymore on their <code>develop</code> branch.</p>
+<p>The street network of France consists of a little more than 30 millions
+nodes and about the same amount of edges. As a pleasant bonus, OSRM also
+reads ferry routes. This allows us to reach Corsica and other islands.</p>
+<h1 id="2-compute-all-the-routes">2. Compute all the routes</h1>
+<p><img src="../images/point_zero.webp" alt="CC BY-SA 3.0 Jean-Pierre Bazard (from Wikimedia commons)" /></p>
+<p>So we extracted a nice graph, with realistic travel durations. We now
+want to compute all the routes that start from Notre-Dame. Indeed, while
+all roads lead to Rome, all <a href="https://fr.wikipedia.org/wiki/Point_z%C3%A9ro_des_routes_de_France">roads start from Notre-Dame
+(FR)</a>.</p>
+<p>The starting point is the node
+<a href="http://www.openstreetmap.org/node/677151951#map=17/48.85359/2.34836">677151951</a>
+in OpenStreetMap.</p>
+<p>Luckily, computing all routes from a single node to every other has been
+solved more than half a century ago.</p>
+<p>This is exactly what <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra’s algorithm</a> does.
+In fact, I used the <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">Bellman-Ford algorithm</a>
+as I did not care about performance and I preferred its trivial
+implementation.</p>
+<h1 id="3-count-the-use-of-every-edge">3. Count the use of every edge</h1>
+<p>Once we have all the routes from Notre Dame to all the nodes in France, we take each single route from Notre-Dame to every node in France and we count how many routes each edge occurs in.</p>
+<p>All the edges are inserted into a <a href="http://www.postgis.net">PostGIS</a>
+database (Postgres with a geographical extension) with their coordinates
+and use count.</p>
+<p>All the steps until now were implemented in
+<a href="https://www.rust-lang.org">Rust</a> and are available
+<a href="https://github.com/tristramg/roads-from-nd/blob/master/src/main.rs">here</a>.</p>
+<p>Initially I planned to use QGis or Mapbox to make the rendering.
+However, the size of the data made that impossible for any area larger
+than the greater Paris.</p>
+<h1 id="4-draw-everything-on-a-image">4. Draw everything on a image</h1>
+<p>The coordinates are given as <code>[(longitude; latitude)]</code>. If you
+plot them directly as <code>[(x; y)]</code> on a picture the result is
+horrible at higher latitude. It is called the <a href="https://en.wikipedia.org/wiki/Equirectangular_projection">plate carrée</a>
+projection.</p>
+<p>(By the way, if you plot <code>[(lat; lon)]</code> it will be even worse😉)</p>
+<p>The official projection for continental France is <a href="http://spatialreference.org/ref/epsg/rgf93-lambert-93/">Lambert 93</a>. With
+Postgis and a lot of waiting, I could trivially reproject all the
+coordinates.</p>
+<p>As I could not find how to use a graphics library in Rust, I ended up
+drawing the edges in C++ using <a href="http://cairographics.org">Cairo</a>.</p>
+<p>But first I
+<a href="https://github.com/tristramg/roads-from-nd/blob/master/dump.cc">dumped</a>
+all the edges in a binary file in order to save some time when
+experimenting around.</p>
+<p>With a lot of trial and error I found a reasonable balance between the
+width of each edge and its darkness.</p>
+<p>For the pictures with the largest resolution, I
+<a href="https://github.com/tristramg/roads-from-nd/blob/master/draw.cc">drew</a>
+every edge that was used by more than 10 routes. That represents about
+18 million edges.</p>
+<h1 id="5-scale-for-europe">5. Scale for Europe</h1>
+<p>So I got a nice representation of all the roads from Notre-Dame in
+France. What about Europe, like in the project I ripped off? My 4 years
+old netbook was mistreated enough.</p>
+<p>I would need a better machine (much more RAM, an SSD disk would be
+nice), and to make some improvements:</p>
+<ul>
+<li>Use Dijkstra’s algorithm instead of Bellman-Ford</li>
+<li>Find a more effective way to count every edge use</li>
+<li>Skip the intermediate step with PostGIS; dump directly into a binary file</li>
+<li>Find a proper way to draw 100 million little dashes?</li>
+</ul>
+<h1 id="6-little-bonus">6. Little bonus</h1>
+<p><video width="750" controls src="/images/roads_from_nd.mp4"> Animation of the roads </video></p>
+
+</article>
+
+  </div>
+</body>
+
+</html>

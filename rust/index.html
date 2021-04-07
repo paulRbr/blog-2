@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Life and Opinions of Tristram Gräbener, Developper</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tristramg.eu&#x2F;style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Tristram Gräbener, Life and Opinions</a></h1>
+  </header>
+  <div class="container">
+    
+<h2>Rust un langage prometteur</h2>
+<p class="subtitle">2013-04-17</p>
+<article>
+<blockquote class="update">
+    <h3>Mise à jour le 2020-12-26</h3>
+    Ze suis toujours aussi fan du Rust et j’ai pu en faire professionnellement. Et ce blog a été réécrit en utilisant
+<a href="https://www.getzola.org/">zola</a>.</p>
+<p>Par contre, l’évolution est amusante : presque tout ce que je détaille n’est plus d’actualité, d’autres approches ont été utilisées.</p>
+<p>Mais reste le plus important : on a une alternative au C++ sûre et plaisante à utiler.
+</blockquote>
+<p>Je me suis intéressé au langage <a href="http://www.rust-lang.org/">Rust</a>. Et je
+pense qu’il mérite que vous vous intéressiez également. Le problème
+c’est que je me suis un peu emballé et cet article est devenu un peu
+trop ambitieux. J’espère qu’il reste compréhensible malgré les
+approximations généreuses.</p>
+<p>J’ai donc décidé de ne pas parler de la syntaxe, mais des deux aspects
+que je trouve particulièrement intéressants :</p>
+<ul>
+<li>La gestion du parallélisme</li>
+<li>La gestion de la mémoire</li>
+</ul>
+<h1 id="gestion-du-parallelisme">Gestion du parallélisme</h1>
+<p>Utiliser le mot <em>parallélisme</em> est risqué : je risque de me faire taper
+par ceux qui s’y connaissent. Mais j’aime vivre dangereusement, c’est
+mon côté rebelle.</p>
+<p>La question de fond, c’est comment faire plusieurs choses en même temps : gérer plusieurs requêtes http, commencer à parser le texte pendant
+qu’on lit sur le disque dur la suite, avoir plus de fps à Wolfenstein,
+etc.</p>
+<p>Des approches, il y en a plein ! Le problème permanent c’est comment
+faire communiquer ces bouts de code qui tournent côte à côte.</p>
+<h2 id="multiprocess">Multiprocess</h2>
+<p>On lance plusieurs fois le programme. Approche très simple et souvent
+utilisée sur des serveurs qui se dédoublent pour gérer plus de requêtes.
+La communication entre les process est galère… De plus lancer un
+nouveau process est une opération lourde à ne pas faire trop souvent.</p>
+<h2 id="multithread">Multithread</h2>
+<p>C’est ce que nous apprenons à l’école. On apprend à utiliser des mutex,
+des sémaphores, on deviens fou à essayer de déboguer une
+<em>race-condition</em>. Donc c’est non seulement difficile à coder, mais en
+plus un bon nombre de langages on du mal à implémenter les threads. Et
+en plus, dans le cas de gros serveurs, créer un thread par requête est
+déjà une opération trop lourde, on arrive au <a href="http://www.kegel.com/c10k.html">C10K
+problem</a>.</p>
+<h2 id="boucle-d-evenements">Boucle d’évènements</h2>
+<p><a href="http://nodejs.org">node.js</a> est capable de gérer un grand nombre de
+requêtes en parallèle tout en ne tournant qu’un seul thread. Cela a
+popularisé les boucles d’évènements. Une boucle qui gère l’ensemble des
+tâches à traiter fonctionne plutôt bien ; en particulier lorsqu’il y a
+un grand nombre de temps morts comme des lectures disques, requêtes à
+une base de données, etc..</p>
+<p>Cet article explique plutôt bien ce dont il s’agit
+<a href="http://applidium.com/en/news/writing_an_evented_web_server/">http://applidium.com/en/news/writing_an_evented_web_server/</a>.</p>
+<h2 id="les-tasks-rust">Les tasks Rust</h2>
+<p>Les <em>tasks</em> dans Rust sont comparables que les <em>goroutines</em> de Go. La
+création d’une tâche est très légère : c’est tout à fait envisageable de
+lancer des dizaines de milliers de tâches. Concrètement, à l’exécution
+du programme plusieurs threads sont lancés qui se répartissent le
+traitement des tasks.</p>
+<p>En ce qui concerne la communication entre taches, un objet spécifique
+permet de s’échanger des données. Il s’agit de l’unique moyen de
+communiquer entre tâches : il n’y a donc aucun moyen d’avoir deux taches
+qui accèdent simultanément à la même donnée. Il n’y a donc plus toutes
+les emmerdes liées à la programmation multithreadée.</p>
+<h1 id="gestion-de-la-memoire">Gestion de la mémoire</h1>
+<p>Aaaaahhh que de trolls Java vs. C++ vs Alzheimer.</p>
+<p>L’approche de Rust sur la gestion de la mémoire est particulièrement
+intéressante car ça doit être la seule qui arrive à gérer tous les cas
+d’utilisation du C++ (en particulier dans sa version 2011) en apportant
+une grande sécurité et permettant de très bonnes performances.</p>
+<p>Par sécurité j’entends quatre choses :</p>
+<ul>
+<li>Pas de valeur nulle (impossible d’avoir une <code>NullPointerException</code>)</li>
+<li>Pas de fuite mémoire</li>
+<li>Pas d’accès à la mémoire là où on n’a pas le droit</li>
+<li>Pas d’accès concurrent</li>
+</ul>
+<p>Rust répond à cette problématique en proposant trois manière de
+référencer de la donnée (le C++ en ayant 4 depuis les R-values du C++11,
+et encore je ne compte pas les smart pointers, etc.).</p>
+<h2 id="garbage-collection">Garbage collection</h2>
+<p>Une approche basée sur des garbage collectors considère globalement que
+tout est pointeur et qu’il y a un éboueur global qui sait combien de
+variables pointent sur l’objet. Il y a un problème de performance et les
+pointeurs peuvent être nuls ce qui empêche d’être sur que l’on peut
+accéder à l’objet. Et je parle même pas des horreurs autour du boxing.</p>
+<p>Rust propose des données qui seront garbage-collectées. Il suffit de
+préfixer le type par un <code>@</code>. Il est obligatoire d’initialiser les
+données et ces données ne peuvent en aucun cas être partagées entre deux
+<em>tasks</em>. De ce fait, le garbage collector ne pénalise qu’une seule
+<em>task</em> et pas toutes. De plus, on a la garantie qu’il est impossible que
+deux <em>tasks</em> accèdent simultanément à la même donnée. Il n’y a donc
+aucun risque d’accès concurrents.</p>
+<h2 id="donnees-locales">Données locales</h2>
+<p>Pour des raisons qui m’échappent, peu de langages proposent de déclarer
+des objets qui ont une durée de vie limitée au scope. C’est extrêmement
+performant (pas de garbage collector, pas de surcout mémoire lié au
+pointeur…). On a la garantie que l’objet existe et il sera simplement
+détruit à la fin du contexte. Si on veut sortir une variable du
+contexte, on la copie.</p>
+<p>Les défenseurs du C++ vanteront cette approche nommée
+<a href="http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization">RAII</a>
+qui est vraiment géniale de simplicité.</p>
+<p>Il y a juste un défaut : lors qu’on souhaite avoir plusieurs objets qui
+font référence à un même objet, ça se gâte (mais en pratique, en prenant
+le temps de bien développer, il s’agit de cas limite assez rare).</p>
+<p>Il s’agit là du modèle de base en Rust, autant dire que ça me réjouit.</p>
+<h2 id="owned-boxes">Owned boxes</h2>
+<p>C’est le terme utilisé dans Rust. Il s’agit d’un pointeur similaire à un
+<code>std::unique_ptr</code> en C++. Il doit être initialisé (pas de pointeur nul)
+et il ne peut pas y avoir deux pointeurs qui pointent sur le même objet.
+Un bout de code <strong>possède</strong> la mémoire. Du coup la gestion de la mémoire
+est triviale et il n’y a pas besoin de garbage collecteur.</p>
+<p>La possession peut être transmise (typiquement vers une autre <em>task</em>),
+mais il n’est plus possible d’utiliser la première variable (les
+C++-istes penseront à <code>std::move</code>).</p>
+<pre><code>fn main() {
+  let x = ~10; // x est un owned box vers un entier
+  let y = x; // y prend la possession. x n’est plus utilisable
+  io::println(int::str(*x)); // Ça ne compilera pas : on n’a pas le droit d’utiliser x
+}
+</code></pre>
+<h2 id="mot-de-la-fin-sur-la-memoire">Mot de la fin sur la mémoire</h2>
+<p>Ça peut sembler compliqué d’avoir ces trois notions. Surtout lorsqu’on
+vient d’un langage tel le Java où l’on ne se pose pas forcément la
+question.</p>
+<p>Je pense que c’est quand même utile de se pencher sur ces problématiques
+de possession des objets et que l’approche Rust est très agréable.</p>
+<h1 id="autres-choses-que-j-aime-bien">Autres choses que j’aime bien</h1>
+<p>Il y a d’autres détails que j’aime bien en Rust, les voici en vrac :</p>
+<ul>
+<li>Le compilateur se base sur <a href="http://fr.wikipedia.org/wiki/LLVM">LLVM</a>
+ce qui évite de réinventer la roue pour les optimisations à la
+compilation</li>
+<li>Par défaut on a que des constantes. Il faut explicitement demander
+des variables mutables</li>
+<li>Il n’y a pas d’héritage lourdingue à la Java. Tout se base sur des
+interfaces. Cependant il faut encore que je creuse cet aspect. Ça
+m’irrite de devoir définir explicitement les interfaces qu’on
+implémente</li>
+<li>Le nom, même si c’est galère à chercher sur Google (moins que Go
+cependant)</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>Ça fait longtemps que la complexité du C++ m’agace, mais je n’ai pas
+trouvé de langage qui me satisfait. Il y a bien le D, mais j’ai le
+sentiment qu’il reste trop proche du C++ sans apporter tant de
+simplifications que ça. Le Go est un très bon candidat, mais peut-être
+pas assez brut…</p>
+<p>Rust a réussi à avoir une gestion de mémoire très rigoureuse, avec un
+bon compromis performances/nombre de concepts. Seule la sécurité n’a pas
+été sacrifiée et c’est fortement appréciable.</p>
+<p>Malheureusement, ce n’est pas vraiment utilisable en production car
+l’évolution est encore assez rapide. J’ai hâte qu’une version 1 sorte et
+que j’aie l’occasion de m’en servir pour un vrai projet.</p>
+<p>Si vous voulez l’essayer, il est conseillé d’utiliser la branche
+<em>master</em> de leur dépôt GitHub. La communauté est très sympathique sur
+IRC, donc n’hésitez pas à demander si vous coincez.</p>
+
+</article>
+
+  </div>
+</body>
+
+</html>
