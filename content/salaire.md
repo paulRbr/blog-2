@@ -148,7 +148,7 @@ Enfin, mon cas est personnel. Il ne s’applique pas à plein d’autres situati
 
 * je n’ai pas un emprunt immobilier à rembourser,
 * je n’ai pas d’enfants,
-* j’ai eu de la chance à la naissance et avec les _stock options_,
+* j’ai eu de la chance à la naissance et aux _stock options_,
 * je n’ai pas de dette étudiante.
 
 Vivement la fin de l’argent. Ça sera plus simple. Dans un premier temps au moins, arrêtons de faire des transactions pour les besoins de base (généralisons le tiers payant, appliquons-le au transport et à l’habitat !).
