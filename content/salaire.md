@@ -94,7 +94,7 @@ Je facture donc environ `72 000 €` par an.
 
 ## Mes besoins
 
-Je suis conscient d’être dans une situation particulière. En particulier je n’ai personne à charge, je n’ai pas besoin de voiture et je suis locataire. J’ai donc des dépenses assez restraintes. Il ne s’agit pas de pointer du doigt ceux qui ont d’autres besoins. Je pars juste de ma situation personnelle pour alimenter la discussion.
+Je suis conscient d’être dans une situation particulière. En particulier je n’ai personne à charge, je n’ai pas besoin de voiture et je suis locataire. J’ai donc des dépenses assez restreintes. Il ne s’agit pas de pointer du doigt ceux qui ont d’autres besoins. Je pars juste de ma situation personnelle pour alimenter la discussion.
 
 * Loyer : 12 000 €
 * Épargne : 12 000 € (3 000 € en versements, 9 000 € en abondement)
